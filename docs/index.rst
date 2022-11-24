@@ -14,7 +14,11 @@ Welcome! This is the documentation for the LabInform ELN component, the electron
 Features
 ========
 
-* ...
+* Based on `DokuWiki <https://www.dokuwiki.org/>`_
+
+* Small footprint, easy installation, no database backend
+
+* Flexible, easily adapted to your needs from *within* the Web UI
 
 * ...
 
@@ -85,14 +89,6 @@ There is a number of related packages users of the LabInform ELN may well be int
    developer/developers
    developer/changelog
    developer/roadmap
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 
 
 License
