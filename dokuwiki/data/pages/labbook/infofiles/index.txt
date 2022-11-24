@@ -1,0 +1,65 @@
+====== Templates for info files ======
+
+For each experiment performed, a file with the important parameters for the measurement is usually stored, which is saved together with the raw data and read in by the processing routines.
+
+
+
+
+===== UV/vis =====
+
+<file yaml uvvis.yaml>
+---
+format:
+  type: UV/vis metadata
+  version: 0.1.3
+
+general:
+  start:
+    date: 2018-05-13
+    time: 11:05:00
+  end:
+    date: 2018-05-13
+    time: 11:06:00
+  operator: John Doe
+  purpose: Temperature dependence
+  labbook: loi:42.1001/lb/tb/uvvis/yyyy-mm-dd_id
+
+sample:
+  name: PNDIT2
+  id: ba42
+  solvent: Toluol
+  concentration: 0.4 mg/ml
+  preparation: 1:25 diluted
+
+cell:
+  manufacturer: Hellma
+  type: QS 1.00 
+  pathlength: 1 mm
+
+temperature control:
+  controlled: True
+  temperature: 290 K
+  controller: Oxford MercuryITC
+  cryostat: Oxford Optistat DN2
+  cryogen: LN2
+
+experiment:
+  type: Spectrum
+  measurement mode: Absorption
+
+spectrometer:
+  manufacturer: Shimadzu
+  model: UV-1601PC
+  software: UV Probe, Version 2.43
+
+data format:
+  raw: Shimadzu SPC
+  export: ASCII
+
+comment: |
+  And here some comments as free text - and as YAML can handle UTF8,
+  you can include special characters such as umlauts: äöü
+  
+  even empty lines are allowed, provided that each line is indented.
+</file>
+

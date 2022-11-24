@@ -1,0 +1,7 @@
+  * Kind         = Kind (measurement method)
+  * Manufacturer = Manufacturer
+  * Code         = exact type designation
+  * Material     = Material (Hellma Codes)
+  * Path         = optical path length
+  * Volume       = (minimal) Volume
+  * Bottom       = Thickness of the bottom

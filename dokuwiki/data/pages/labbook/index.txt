@@ -1,0 +1,84 @@
+~~NOTOC~~
+
+{{fa>book?48&align=right}} 
+
+====== Lab Notebook ======
+
+//Electronic Lab Notebook (ELN) for measurements of all kinds.//
+
+++++ Explanations |
+
+{{page>.:help&inline}}
+
+++++
+
+
+
+<WRAP group centeralign>
+<WRAP third column>
+<WRAP box round>
+[[.:cwepr:|{{fa>level-up?48}}]]
+
+===== cwEPR =====
+
+[[.:cwepr:|continuous-wave EPR spectroscopy]]
+</WRAP>
+</WRAP>
+
+<WRAP third column>
+<WRAP box round>
+[[.:trepr:|{{fa>flash?48}}]]
+
+===== trEPR =====
+
+[[.:trepr:|time-resolved EPR spectroscopy]]
+</WRAP>
+</WRAP>
+
+<WRAP third column>
+<WRAP box round>
+[[.:uvvis:|{{fa>lightbulb-o?48}}]]
+
+===== UV/Vis =====
+
+[[.:uvvis:|UV/visible optical spectroscopy]]
+</WRAP>
+</WRAP>
+</WRAP>
+
+
+
+===== Create new entry =====
+
+<form>
+Action template template_"@@Experiment@@" :labbook:@@Experiment@@:@DATE(@@Date@@,%%Y)@:@DATE(@@Date@@,%%m)@:@DATE(@@Date@@,%%d)@_@@ID@@
+Thanks "Thanks for submitting your valuable data."
+
+Fieldset          "General parameters for the measurement"
+hiddenautoinc     "ID"
+date              "Date"
+textbox           "Sample" !
+number            "Samplenumber" !
+textbox           "Temperature"
+data_aliastextbox "Experiment" _experiment
+
+Fieldset "TREPR experiment parameters" "Experiment" "TREPR"
+textbox           "Excitation"
+data_aliastextbox "Probehead" _probehead
+
+Fieldset "cwEPR experiment parameters" "Experiment" "cwEPR"
+data_aliastextbox "Probehead" _probehead
+
+Fieldset "Submit form"
+thanks            "Thanks for the entry."
+submit            "Create entry"
+</form>
+
+
+===== Info files for different experiments =====
+
+For each experiment performed, a file with the important parameters for the measurement is usually stored, which is saved together with the raw data and read in by the processing routines.
+
+  * [[.:infofiles:|Templates for info files (downloadable)]]
+
+

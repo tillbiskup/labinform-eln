@@ -1,0 +1,52 @@
+====== @@Date@@ ======
+
+---- dataentry labbook ----
+type_hidden         : Labbook
+date_hidden         : @@Date@@
+experiment_epr      : @@Experiment@@
+sample              : @@Sample|@@
+sampleno_sa         : @@Samplenumber|@@
+buffer              : -
+temperature         : @@Temperature@@
+resonator_probehead : @@Probehead@@
+purpose             : -
+----
+
+
+
+
+===== Protocol =====
+
+  ; xx:xx 
+  : ...
+  ; xx:xx 
+  : ...
+
+
+===== Comments =====
+
+...
+
+
+===== Analysis =====
+
+...
+ 
+<figure>
+<caption>**... .** ...</caption>
+</figure>
+
+
+===== Further plans =====
+
+...
+
+
+===== Documentation =====
+
+<file "" data01.info>
+</file>
+
+<file "" data02.info>
+</file>
+

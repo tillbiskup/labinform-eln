@@ -1,0 +1,15 @@
+{{fa>flash?48&align=right}} 
+
+====== tr-EPR ======
+
+//Overview of all tr-EPR measurements//
+
+---- datatable ----
+cols    : %pageid%, sample, sampleno_sa, temperature, excitation, purpose
+headers : Details, Sample, No., Temp., λ, Purpose
+filter  : type~Labbook
+filter  : %pageid%!~*template*
+filter  : experiment=TREPR
+sort    : ^date
+----
+

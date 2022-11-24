@@ -1,0 +1,48 @@
+~~NOTOC~~
+
+{{fa>wrench?48&align=right}}
+
+====== Technology ======
+
+//A few words about the technology behind the ELN component of LabInform.//
+
+
+===== Basis: DokuWiki with a number of extensions =====
+
+The wiki component of LabInform is based on [[https://www.dokuwiki.org/|DokuWiki]], a free and open source wiki software written in PHP. The advantages of DokuWiki over other wikis include its hierarchical structure, the avoidance of databases for the (exclusive) storage of information to the greatest extent possible, and the variety of extensions (//plugins//) especially for structuring workflows.
+
+
+===== Goal: Docker container =====
+
+The goal of developing LabInform's wiki component is to make it available as a Docker container. This allows easy installation both locally on a computer and in the local network or just as well on a web server.
+
+
+===== Information for administrators =====
+
+Those who want/need to administer and/or develop the wiki component of LabInform need deeper knowledge if some conventions and procedures.
+
+
+==== Navigation ====
+
+The navigation is mainly done via the overview pages and for the sections also via the [[:sidebar|sidebar]]. For better recognition, icons are assigned to the individual areas, which are repeated in the navigation and on the respective overview page of the area and are implemented via the [[https://www.dokuwiki.org/plugin:icons|Icons plugin]].
+
+If there are further sub-areas to an area, e.g. in [[:samples:|samples]], the sub-areas are also displayed in the sidebar depending on the context. This is done via a page named "''areas''", so for samples correspondingly "[[:samples:areas|:samples:areas]]". The contextual display is implemented via the [[https://www.dokuwiki.org/plugin:tplinc|tplinc plugin]].
+
+
+==== Explanations ====
+
+For each area there is a fold-out explanation at the top. This functionality is realized via the [[https://www.dokuwiki.org/plugin:folded|Folded plugin]] in combination with the [[https://www.dokuwiki.org/plugin:include|Include plugin]]. The correspondingly included page is called "''help''", is located in the same namespace (directory) as the associated area, and is included accordingly.
+
+The explanations enable the users to familiarize themselves with the ideas behind it at any time or to get a well-founded overview during the first contact with the Wiki component of LabInform. Of course, as always, only those who read, understand and implement the information will get something out of it.
+
+
+==== Forms ====
+
+Many entries in individual areas of the Wiki component of LabInform are created via forms. This has several advantages, among other things the collection of all necessary information and by the use of templates a uniform filing, which contributes to the clarity.
+
+The functionality is mainly realized via the [[https://www.dokuwiki.org/plugin:bureaucracy|Bureaucracy plugin]] and the [[https://www.dokuwiki.org/plugin:data|Structured-Data plugin]]. For easier editing of the templates used, the [[https://www.dokuwiki.org/plugin:templatepagename|TemplatePageName-Plugin]] is also used.
+
+Since all information, starting with the samples, is available in a wiki, numerous cross-links can be created automatically. Thus, a list of related measurements appears on the page for a sample, just as all samples derived from a batch are noted there.
+
+Since the linking of different pages (such as samples, projects, etc.) in the text is additionally supported by so-called [[https://www.dokuwiki.org/interwiki|Interwiki links]], the [[https://www.dokuwiki.org/plugin:confmanager|confmanager plugin]] allows the simple editing of these abbreviations from the [[.:?do=admin|Administration interface of the wiki]].
+

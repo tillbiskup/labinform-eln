@@ -1,0 +1,47 @@
+~~NOTOC~~
+
+{{fa>server?48&align=right}} 
+
+====== Calculations ======
+
+//(quantumchemical) Calculations//
+
+
+++++ Explanations |
+
+{{page>.:hilfe&inline}}
+
+++++
+
+
+<WRAP group centeralign>
+<WRAP third column>
+<WRAP box round>
+[[.:molecules:|{{fa>first-order?48}}]]
+
+===== Molecules =====
+
+[[.:molecules:|Molecule on whose geometry calculations are performed]]
+</WRAP>
+</WRAP>
+
+<WRAP third column>
+<WRAP box round>
+[[.:geometries:|{{fa>diamond?48}}]]
+
+===== Geometries =====
+
+[[.:geometries:|Structure of a molecules, on which calculations are performed]]
+</WRAP>
+</WRAP>
+
+<WRAP third column>
+<WRAP box round>
+[[.:calculations:|{{fa>server?48}}]]
+
+===== Calculations =====
+
+[[.:calculations:|Overview of the individual calculations performed on geometries]]
+</WRAP>
+</WRAP>
+</WRAP>

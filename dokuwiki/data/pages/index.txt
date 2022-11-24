@@ -1,0 +1,43 @@
+~~NOTOC~~
+
+====== ELN@LabInform ======
+
+
+++++ Explanations |
+
+{{page>.:help&inline}}
+
+++++
+
+<WRAP group centeralign>
+<WRAP third column>
+<WRAP box round>
+[[.:labbook:|{{fa>book?48}}]]
+
+===== Labbook =====
+
+[[.:labbook:|Electronic Lab Notebook (ELN) for experiments]]
+</WRAP>
+</WRAP>
+
+<WRAP third column>
+<WRAP box round>
+[[.:samples:|{{fa>flask?48}}]]
+
+===== Samples =====
+
+[[.:samples:|Samples, Syntheses, sample containers]]
+</WRAP>
+</WRAP>
+
+<WRAP third column>
+<WRAP box round>
+[[.:calculations:|{{fa>server?48}}]]
+
+===== Calculations =====
+
+[[.:calculations:|(Quantumchemical) Calculations]]
+</WRAP>
+</WRAP>
+</WRAP>
+

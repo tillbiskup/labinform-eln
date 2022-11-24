@@ -11,6 +11,12 @@ LabInform ELN documentation
 Welcome! This is the documentation for the LabInform ELN component, the electronic lab(oratory) notebook (ELN) that is part of the `LabInform <https://www.labinform.de/>`_ laboratory information and management system (LIMS).
 
 
+.. important::
+    A demo of the LabInform ELN can be accessed online: `<https://eln.labinform.de/>`_
+    
+    The data contained in this demo will be deleted regularly. Nevertheless, don't enter any sensible data in there, as everybody will be able to access them.
+
+
 Features
 ========
 

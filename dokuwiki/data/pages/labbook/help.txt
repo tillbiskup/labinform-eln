@@ -1,0 +1,5 @@
+
+  * There is an associated lab book page for each measurement.
+  * The lab book pages are generated via a form and sorted by measurement method.
+  * There is a data block at the top of the lab book page.
+  * As soon as an entry of this data block changes between two measurements, a new lab book page is created (note that this is not done automatically, but needs to be done by the user).

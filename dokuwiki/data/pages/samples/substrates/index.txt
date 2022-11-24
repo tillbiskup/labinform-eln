@@ -1,0 +1,35 @@
+{{fa>bars?48&align=right}}
+
+====== Substrates ======
+
+//Substrates are (optionally) used as sample support.//
+
+
+===== Create new substrate entry =====
+
+<form>
+Action template template_substrate :samples:substrates:@@No@@
+
+Fieldset      "New entry for substrate"
+hiddenautoinc "No"
+textbox       "Material"
+static        "(PET, Glas, ...)"
+textbox       "Description"
+static        "(genauer Typ)"
+textbox       "Manufacturer" !
+thanks        "Thanks for your entry."
+submit        "Create entry"
+</form>
+
+
+===== List of substrates =====
+
+
+---- datatable ----
+cols    : ID, %pageid%, Material, Description, Manufacturer
+headers : ID, Details, Material, Description, Manufacturer
+filter  : type~Substrates
+filter  : %pageid%!~*template*
+sort    : ^%pageid%
+----
+

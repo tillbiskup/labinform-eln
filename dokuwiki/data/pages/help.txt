@@ -1,0 +1,7 @@
+The LabInform Wiki is divided into sections at the top level, each of which is grouped together again. Each area is represented by its own symbol.
+
+The individual sections can also be accessed from the sidebar on the left. Within the individual areas there are basically overview pages, which serve the navigation.
+
+For each area there is an explanation like this one, which can be expanded.
+
+New here? The **[[:intro:|general introduction]]** is certainly a good starting point to get warm with the ELN component of LabInform.

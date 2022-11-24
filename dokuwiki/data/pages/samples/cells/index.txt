@@ -1,0 +1,42 @@
+~~NOTOC~~
+
+{{fa>square?48&align=right}} 
+
+====== Cells ======
+
+//Cells for all kinds of optical spectroscopy.//
+
+
+===== Create new cell entry =====
+
+<form>
+Action template template_cell :samples:cells:@@No@@
+labels labels
+
+Fieldset          "New entry for cells"
+hiddenautoinc     "No"
+data_aliastextbox "Kind" _celltype
+textbox           "Manufacturer" ="Hellma"
+textbox           "Code" ="###-##-##"
+data_aliastextbox "Material" _cellmaterial
+textbox           "Path" ! ="10 mm"
+textbox           "Volume" ! ="500 ul"
+textbox           "Bottom" ! ="1.5 mm"
+thanks            "Thanks for your entry."
+submit            "Create entry"
+</form>
+
+For an overview of the material and the abbreviations used see the respective [[https://www.hellma.com/en/laboratory-supplies/cuvettes/material-and-technical-information/|webpage of the manufacturer Hellma Analytics]].
+
+
+
+===== List of cells =====
+
+
+---- datatable ----
+cols    : ID, %pageid%, Kind, Manufacturer, Code, Material, Path, Bottom, Volume
+headers : ID, Details, Kind, Manuf., Code, Mat., Path, Bottom, Volume
+filter  : type~Cells
+filter  : %pageid%!~*template*
+sort    : ^%pageid%
+----

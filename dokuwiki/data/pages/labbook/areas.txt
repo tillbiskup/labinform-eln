@@ -1,0 +1,6 @@
+===== Subareas =====
+
+[[:labbook:cwepr:|{{fa>level-up}}]] [[:labbook:cwepr:|cwEPR]]\\
+[[:labbook:trepr:|{{fa>flash}}]] [[:labbook:trepr:|trEPR]]\\
+[[:labbook:uvvis:|{{fa>lightbulb-o}}]] [[:labbook:uvvis:|UV/vis]]
+

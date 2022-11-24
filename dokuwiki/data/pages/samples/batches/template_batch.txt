@@ -1,0 +1,43 @@
+====== @@Name@@ ======
+
+---- dataentry batch ----
+type_hidden              : Batches # 
+ID                       : @@No@@
+Substance                : @@Substance@@ # 
+Date                     : @@Date@@ # 
+Supply source            : @@Supply source@@ # 
+Code                     : @@Code|@@ # 
+Solvent                  : @@Solvent|@@ # 
+State_state              : @@State|@@ # 
+Storage_storage          : @@Storage|@@ # 
+Batch_pagebatch          : @@Batch|@@ # 
+Synthesis_pagesynthesis_ : @@Synthesis|@@ # 
+----
+
+
+===== Samples =====
+
+---- datatable ----
+cols    : ID, %%pageid%%, Substrate_pagesubstrate, Date, Measured 
+headers : ID, Description, Substrate, Date, Measured
+filter  : type~Samples
+filter  : %%pageid%%!~*template*
+filter  : Batch~@@No@@
+sort    : ^pageid
+----
+
+
+===== Batches =====
+
+---- datatable ----
+cols    : ID, %%pageid%%, Code, Date 
+headers : ID, Description, Code, Date
+filter  : type~Batches
+filter  : %%pageid%%!~*template*
+filter  : Batch~@@No@@
+sort    : ^pageid
+----
+
+
+===== Comments =====
+

@@ -1,0 +1,18 @@
+====== Quick access ======
+
+[[https://www.labinform.de/|LabInform.de]]
+
+[[:|{{fa>home}}]] [[:|Home]]\\
+[[:intro:|{{fa>info-circle}}]] [[:intro:|Intro]]\\
+[[:technique:|{{fa>wrench}}]] [[:technique:|Technique]]
+
+[[:imprint|{{fa>gavel}}]] [[:imprint|Imprint (Impressum)]]
+
+\\
+
+===== Areas =====
+
+[[:labbook:|{{fa>book}}]] [[:labbook:|Labbook]]\\
+[[:samples:|{{fa>flask}}]] [[:samples:|Samples]]\\
+[[:calculations:|{{fa>server}}]] [[:calculations:|Calculations]]
+

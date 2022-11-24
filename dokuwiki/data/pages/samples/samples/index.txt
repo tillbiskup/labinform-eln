@@ -1,0 +1,40 @@
+{{fa>flask?48&align=right}} ====== Samples ======
+
+//The actual sample that goes into the spectrometer. Always originates from a batch.//
+
+
+===== Create new sample entry =====
+
+<form>
+Action template template_sample :samples:samples:@@No@@
+
+Fieldset      "New entry for samples"
+hiddenautoinc "No"
+static        "Necessary fields"
+textbox       "Description"
+date          "Date"
+data_aliastextbox Batch _pagebatch 
+static        "Optional fields"
+data_aliastextbox Cell _pagecell !
+data_aliastextbox Tube _pagetube !
+data_aliastextbox Substrate _pagesubstrate !
+textbox       "Concentration" !
+data_aliastextbox "Measured" _bool ! =false
+data_aliastextbox "State" _state ! =exists
+data_aliastextbox "Storage" _storage ! =RT
+thanks        "Thanks for your entry."
+submit        "Create entry"
+</form>
+
+
+===== List of samples =====
+
+
+---- datatable ----
+cols    : ID, %pageid%, Batch_pagebatch, Substrate_pagesubstrate, Date, Measured, State, Storage
+headers : ID, Description, Batch, Substrate, Date, Measured, State, Storage
+filter  : type~Samples
+filter  : %pageid%!~*template*
+sort    : ^%pageid%
+----
+

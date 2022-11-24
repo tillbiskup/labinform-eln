@@ -1,0 +1,78 @@
+~~NOTOC~~
+
+{{fa>flask?48&align=right}} 
+
+====== Samples ======
+
+//Overview of batches, samples, syntheses, substrates, cells, tubes.//
+
+
+++++ Explanations |
+
+{{page>.:help&inline}}
+
+++++
+
+<WRAP group centeralign>
+<WRAP third column>
+<WRAP box round>
+[[.:batches:|{{fa>archive?48}}]]
+
+===== Batches =====
+
+[[.:batches:|Load from collaborations or syntheses]]
+</WRAP>
+</WRAP>
+
+<WRAP third column>
+<WRAP box round>
+[[.:samples:|{{fa>flask?48}}]] 
+===== Samples =====
+
+[[.:samples:|actual sample to be measured (from batch)]]
+</WRAP>
+</WRAP>
+
+<WRAP third column>
+<WRAP box round>
+[[.:syntheses:|{{fa>industry?48}}]]
+
+===== Syntheses =====
+
+[[.:syntheses:|own synthesis of a substance]]
+</WRAP>
+</WRAP>
+</WRAP>
+
+
+<WRAP group centeralign>
+<WRAP third column>
+<WRAP box round>
+[[.:cells:|{{fa>square?48}}]]
+
+===== Cells =====
+
+[[.:cells:|Cells for optical spectroscopy]]
+</WRAP>
+</WRAP>
+
+<WRAP third column>
+<WRAP box round>
+[[.:tubes:|{{fa>circle?48}}]]
+
+===== Tubes =====
+
+[[.:tubes:|Sample tubes, e.g. for magnetic resonance]]
+</WRAP>
+</WRAP>
+
+<WRAP third column>
+<WRAP box round>
+[[.:substrates:|{{fa>bars?48}}]] 
+===== Substrates =====
+
+[[.:substrates:|optional support material for samples]]
+</WRAP>
+</WRAP>
+</WRAP>
+
