@@ -1,0 +1,9 @@
+====== Login ======
+
+You are currently not logged in! Enter your authentication credentials below to log in. You need to have cookies enabled to log in.
+
+To log in into this demo instance, use one of the two credentials:
+
+^ Username   ^ Password  ^
+| demo-user  | eln-user  |
+| demo-admin | eln-admin |

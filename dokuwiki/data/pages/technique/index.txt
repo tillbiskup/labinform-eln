@@ -14,12 +14,12 @@ The wiki component of LabInform is based on [[https://www.dokuwiki.org/|DokuWiki
 
 ===== Goal: Docker container =====
 
-The goal of developing LabInform's wiki component is to make it available as a Docker container. This allows easy installation both locally on a computer and in the local network or just as well on a web server.
+The goal of developing the LabInform ELN component is to make it available as a Docker container. This allows easy installation both locally on a computer and in the local network or just as well on a web server.
 
 
 ===== Information for administrators =====
 
-Those who want/need to administer and/or develop the wiki component of LabInform need deeper knowledge if some conventions and procedures.
+Those who want/need to administer and/or develop the LabInform ELN component need deeper knowledge if some conventions and procedures.
 
 
 ==== Navigation ====

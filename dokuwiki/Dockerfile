@@ -8,6 +8,8 @@ USER root
 COPY data/media/* /srv/www/data/media/
 COPY data/meta/* /srv/www/data/meta/
 COPY conf/* /srv/www/conf/
+RUN mkdir -p /srv/www/conf/lang/en/
+COPY conf/lang/en/* /srv/www/conf/lang/en/
 
 RUN usermod -u ${UID} nobody && echo ${UID}
 
