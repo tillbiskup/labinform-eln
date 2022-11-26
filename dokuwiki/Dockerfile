@@ -15,5 +15,8 @@ RUN usermod -u ${UID} nobody && echo ${UID}
 
 RUN chown -R nobody.nobody /srv/www
 
+# Make config read-only (demo container, to not allow changing settings)
+RUN chmod ugo-w /srv/www/conf/
+
 USER nobody
 

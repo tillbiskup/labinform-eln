@@ -1,16 +1,16 @@
 ====== @@Date@@ ======
 
 ---- dataentry labbook ----
-type_hidden         : Labbook
-date_hidden         : @@Date@@
-experiment_epr      : @@Experiment@@
-sample              : @@Sample|@@
-sampleno_sa         : @@Samplenumber|@@
-buffer              : -
-temperature         : @@Temperature@@
-excitation          : @@Excitation@@
-resonator_probehead : @@Probehead@@
-purpose             : -
+type_hidden           : Labbook
+date_hidden           : @@Date@@
+experiment_hidden     : @@Experiment@@
+sample                : @@Sample|@@
+sampleno_sa           : @@Samplenumber|@@
+buffer                : -
+temperature           : @@Temperature@@
+excitation            : @@Excitation@@
+resonator_probehead   : @@Probehead@@
+purpose               : -
 ----
 
 

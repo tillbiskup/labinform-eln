@@ -23,8 +23,8 @@ Storage_storage         : @@Storage@@ #
 ===== Measurements =====
 
 ---- datatable ----
-cols    : ID, Purpose
-headers : ID, Purpose
+cols    : %pageid%, experiment, Purpose
+headers : ID, Experiment, Purpose
 filter  : type~Labbook
 filter  : %%pageid%%!~*template*
 filter  : Sample~@@No@@

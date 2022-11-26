@@ -1,14 +1,14 @@
 ====== @@Date@@ ======
 
 ---- dataentry labbook ----
-type_hidden         : Labbook
-date_hidden         : @@Date@@
-experiment          : @@Experiment@@
-sample              : @@Sample|@@
-sampleno_sa         : @@Samplenumber|@@
-buffer              : -
-temperature         : @@Temperature@@
-purpose             : -
+type_hidden           : Labbook
+date_hidden           : @@Date@@
+experiment_hidden     : @@Experiment@@
+sample                : @@Sample|@@
+sampleno_sa           : @@Samplenumber|@@
+buffer                : -
+temperature           : @@Temperature@@
+purpose               : -
 ----
 
 
