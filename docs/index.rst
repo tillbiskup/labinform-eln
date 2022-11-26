@@ -1,4 +1,4 @@
-.. image:: _static/zenodo.xxxxxxx.svg
+.. image:: images/zenodo.xxxxxxx.svg
    :target: https://doi.org/10.5281/zenodo.#######
    :align: right
 
@@ -69,7 +69,7 @@ The LabInform ELN is free software. However, if you use the LabInform ELN as cru
 
 To make things easier, the LabInform ELN has a `DOI <https://doi.org/10.5281/zenodo.#######>`_ provided by `Zenodo <https://zenodo.org/>`_, and you may click on the badge below to directly access the record associated with it. Note that this DOI refers to the software as such and always forwards to the most current version.
 
-.. image:: _static/zenodo.xxxxxxx.svg
+.. image:: images/zenodo.xxxxxxx.svg
    :target: https://doi.org/10.5281/zenodo.#######
 
 
