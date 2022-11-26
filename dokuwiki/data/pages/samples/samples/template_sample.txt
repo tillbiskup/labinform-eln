@@ -23,11 +23,11 @@ Storage_storage         : @@Storage@@ #
 ===== Measurements =====
 
 ---- datatable ----
-cols    : %pageid%, experiment, Purpose
+cols    : %%pageid%%, experiment, purpose
 headers : ID, Experiment, Purpose
 filter  : type~Labbook
 filter  : %%pageid%%!~*template*
-filter  : Sample~@@No@@
+filter  : sampleno~@@No@@
 sort    : ^pageid
 ----
 
