@@ -53,3 +53,5 @@ html_logo = './labinform-logo.png'
 html_favicon = './labinform-favicon.ico'
 
 html_last_updated_fmt = '%Y-%m-%d'
+
+numfig = True

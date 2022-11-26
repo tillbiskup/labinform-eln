@@ -7,9 +7,9 @@ LabInform ELN documentation
 ===========================
 
 
-Welcome! This is the documentation for the LabInform ELN component, the electronic lab(oratory) notebook (ELN) that is part of the `LabInform <https://www.labinform.de/>`_ laboratory information and management system (LIMS).
+Welcome! This is the documentation for the LabInform ELN component, the **electronic laboratory notebook (ELN)** that is part of the `LabInform laboratory information and management system <https://www.labinform.de/>`_ (LIMS).
 
-Why yet another open-source ELN? Don't we have enough already? We are pretty certain that the LabInform ELN comes with some :ref:`unique features <sec-features>`, and we look back at already ten years of successful operation, though mostly restricted to a single lab but different people (and installations).
+Why yet another open-source ELN? Aren't there enough already? We are pretty certain that the LabInform ELN comes with some :ref:`unique features <sec-features>`, and we look back at already ten years of successful operation, though mostly restricted to a single lab but different people (and installations).
 
 .. important::
     A demo of the LabInform ELN can be accessed online: `<https://eln.labinform.de/>`_
@@ -23,15 +23,30 @@ Why yet another open-source ELN? Don't we have enough already? We are pretty cer
 Features
 ========
 
+System:
+
 * Based on `DokuWiki <https://www.dokuwiki.org/>`_, "a simple to use and highly versatile Open Source wiki software".
 
 * Small footprint: minimum system requirements, simple installation, no database backend
 
 * Flexible, easily adapted to your needs from *within* the Web UI
 
-* Inventory for samples
+* Fine-grained access control and role model
+
+* Hierarchical structure, well-suited for knowledge management
 
 * Complete audit trail of changes
+
+
+Contents:
+
+* Flexible contents including media, thanks to simple yet powerful DokuWiki markup symtax
+
+* Inventory for samples
+
+* Automatic cross-linking between inventory and labbook entries
+
+* new entries via web forms and configurable templates
 
 
 And to make it even more convenient for users and future-proof:

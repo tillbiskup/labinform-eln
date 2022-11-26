@@ -14,97 +14,101 @@ For general instructions of how to install DokuWiki, see the `official installat
 
 After having installed a bare DokuWiki, you need to add a number of plugins. This can be done from the DokuWiki admin interface via a web browser or from the command line with file system access to the server. The latter is only suggested for experienced users or if you intend to automate the installation. For details, see the respective section of the `official DokuWiki manual available online <https://www.dokuwiki.org/plugin_installation_instructions>`_.
 
-For a complete list of plugins that should be installed and a short description of their use within the ELN, see Tab.~\ref{tab:plugins}
+For a complete list of plugins that should be installed and a short description of their use within the ELN, see :numref:`tab-plugins`
 
+.. table:: DokuWiki plugins necessary for using the wiki as ELN. The plugin names are given as specified in the official DokuWiki documentation available online, hence the inconsistent spelling/captalisation. Each plugin can be found by the given name and installed via the plugin manager available from the DokuWiki admin interface.
+    :name: tab-plugins
 
-\begin{table*}
-\caption{DokuWiki plugins necessary for using the wiki as ELN. The plugin names are given as specified in the official DokuWiki documentation available online, hence the inconsistent spelling/captalisation. Each plugin can be found by the given name and installed via the plugin manager available from the DokuWiki admin interface.}
-\label{tab:plugins}
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}p{13.5cm}}
-\hline
-Name & Description
-\\
-\hline
-Bureaucracy
-&
-Web forms used to create pages, \foreign{e.g.}, for the lab notebook and the inventory (samples, batches)
-\\
-Structured Data
-&
-Collecting and storing structured data (metadata) on individual wiki pages; allows to aggregate information in overview tables and lists with filters
-\\
-sqlite
-&
-Interface to an SQLite database used solely for easier access to the data collected using the Structured Data plugin and contained in individual wiki pages
-\\
-templatepagename
-&
-Access to template files from within the wiki interface using special (and configurable) names
-\\
-\hline
-Definition List
-&
-Used for the protocol on the individual lab notebook pages providing a detailed list of tasks carried out prefixed with timestamps
-\\
-caption
-&
-Figure and table captions, including referencing these captions
-\\
-\hline
-Wrap
-&
-Structure a wiki page, \foreign{e.g.}, multiple columns and button-like areas
-\\
-Icons
-&
-Include fontawesome and other icons into wiki pages, helpful for easier navigation and overview
-\\
-\hline
-configuration file manager
-&
-Access to the configuration files from within the DokuWiki admin area
-\\
-folded
-&
-Create folded parts of a page, \foreign{e.g.}, for help texts
-\\
-include
-&
-Include other pages into a wiki page; used for help texts in conjunction with the folded plugin
-\\
-Note
-&
-Simple way to add highlighted notes to wiki pages
-\\
-tplinc
-&
-Conditionally include pages at certain parts of the DokuWiki template; useful, \foreign{e.g.}, for area-specific additional navigation in the sidebar
-\\
-upgrade
-&
-Upgrade the DokuWiki from within the admin interface
-\\
-\hline
-(bibtex)
-&
-not available via extension manager, needs rewrite and renaming
-\\
-\hline
-\end{tabular*}
-\end{table*}
+    =========================== =================================================================================
+    Name                        Description
+    =========================== =================================================================================
+    Bureaucracy                 Web forms used to create pages, *e.g.*, for the lab notebook
+
+                                and the inventory (samples, batches)
+    Structured Data             Collecting and storing structured data (metadata) on individual wiki pages;
+
+                                allows to aggregate information in overview tables and lists with filters
+    sqlite                      Interface to an SQLite database used solely for easier access to the data
+
+                                collected using the Structured Data plugin and contained in individual
+
+                                wiki pages
+    templatepagename            Access to template files from within the wiki interface using special
+
+                                (and configurable) names
+    Definition List             Used for the protocol on the individual lab notebook pages providing
+
+                                a detailed list of tasks carried out prefixed with timestamps
+    caption                     Figure and table captions, including referencing these captions
+    Wrap                        Structure a wiki page, *e.g.*, multiple columns and button-like areas
+    Icons                       Include fontawesome and other icons into wiki pages,
+
+                                helpful for easier navigation and overview
+    configuration file manager  Access to the configuration files from within the DokuWiki admin area
+    folded                      Create folded parts of a page, *e.g.*, for help texts
+    include                     Include other pages into a wiki page; used for help texts
+
+                                in conjunction with the folded plugin
+    Note                        Simple way to add highlighted notes to wiki pages
+    tplinc                      Conditionally include pages at certain parts of the DokuWiki template;
+
+                                useful, *e.g.*, for area-specific additional navigation in the sidebar
+    upgrade                     Upgrade the DokuWiki from within the admin interface
+    (bibtex)                    not available via extension manager, needs rewrite and renaming
+    =========================== =================================================================================
 
 
 General configuration
 =====================
 
-There is a series of general configuration settings that should be changed from their defaults. This again can be done using the DokuWiki admin interface via a web browser. For details of the configuration settings to be changed and their respective values, see Tab.~\ref{tab:configuration}.
+There is a series of general configuration settings that should be changed from their defaults. This again can be done using the DokuWiki admin interface via a web browser. For details of the configuration settings to be changed and their respective values, see :numref:`tab-configuration`.
 
 
-\begin{table}
-\caption{Configuration settings of a DokuWiki installation used as ELN. The configuration is grouped into \dokuwiki-specific and plugin-specific sections, and the former into separate blocks. Each configuration setting has a unique key that is given in small print on the configuration page. \enquote{check} and \enquote{uncheck} refer to checkboxes and their respective state.}
-\label{tab:configuration}
-\end{table}
+.. table:: Configuration settings of a DokuWiki installation used as ELN. The configuration is grouped into \dokuwiki-specific and plugin-specific sections, and the former into separate blocks. Each configuration setting has a unique key that is given in small print on the configuration page. ``check`` and ``uncheck`` refer to checkboxes and their respective state.
+    :name: tab-configuration
+    :width: 100%
 
+    +--------------+-------------------+-------------------+
+    | Block        | Key               | Setting           |
+    +==============+===================+===================+
+    | **DokuWiki**                                         |
+    +--------------+-------------------+-------------------+
+    | Basic        | start             | index             |
+    |              +-------------------+-------------------+
+    |              | dmode             | 0750              |
+    |              +-------------------+-------------------+
+    |              | fmode             | 0640              |
+    +--------------+-------------------+-------------------+
+    | Display      | breadcrumbs       | 0                 |
+    |              +-------------------+-------------------+
+    |              | youarehere        | check             |
+    |              +-------------------+-------------------+
+    |              | toptoclevel       | 2                 |
+    |              +-------------------+-------------------+
+    |              | useheading        | Wiki Content Only |
+    +--------------+-------------------+-------------------+
+    | Advanced     | userewrite        | .htaccess         |
+    |              +-------------------+-------------------+
+    |              | useslash          | check             |
+    +--------------+-------------------+-------------------+
+    | **Plugins**                                          |
+    +--------------+-------------------+-------------------+
+    | Data         | edit_content_only | check             |
+    +--------------+-------------------+-------------------+
+    | Include      | showfooter        | uncheck           |
+    |              +-------------------+-------------------+
+    |              | showdate          | uncheck           |
+    |              +-------------------+-------------------+
+    |              | showuser          | uncheck           |
+    |              +-------------------+-------------------+
+    |              | showcomments      | uncheck           |
+    |              +-------------------+-------------------+
+    |              | showlinkbacks     | uncheck           |
+    |              +-------------------+-------------------+
+    |              | showtags          | uncheck           |
+    |              +-------------------+-------------------+
+    |              | showeditbtn       | uncheck           |
+    +--------------+-------------------+-------------------+
 
 Of course, you can deviate from some of the settings given here without impairing functionality, as some are merely a matter of personal taste. Nevertheless, others are necessary for the DokuWiki to work as intended.
 
