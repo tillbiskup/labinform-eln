@@ -1,7 +1,6 @@
-.. LabInform ELN documentation master file, created by
-   sphinx-quickstart on Thu Nov 24 20:47:34 2022.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. image:: _static/zenodo.xxxxxxx.svg
+   :target: https://doi.org/10.5281/zenodo.#######
+   :align: right
 
 ===========================
 LabInform ELN documentation
@@ -10,6 +9,7 @@ LabInform ELN documentation
 
 Welcome! This is the documentation for the LabInform ELN component, the electronic lab(oratory) notebook (ELN) that is part of the `LabInform <https://www.labinform.de/>`_ laboratory information and management system (LIMS).
 
+Why yet another open-source ELN? Don't we have enough already? We are pretty certain that the LabInform ELN comes with some :ref:`unique features <sec-features>`, and we look back at already ten years of successful operation, though mostly restricted to a single lab but different people (and installations).
 
 .. important::
     A demo of the LabInform ELN can be accessed online: `<https://eln.labinform.de/>`_
@@ -17,16 +17,28 @@ Welcome! This is the documentation for the LabInform ELN component, the electron
     The data contained in this demo will be deleted regularly. Nevertheless, don't enter any sensible data in there, as everybody will be able to access them.
 
 
+
+.. _sec-features:
+
 Features
 ========
 
-* Based on `DokuWiki <https://www.dokuwiki.org/>`_
+* Based on `DokuWiki <https://www.dokuwiki.org/>`_, "a simple to use and highly versatile Open Source wiki software".
 
-* Small footprint, easy installation, no database backend
+* Small footprint: minimum system requirements, simple installation, no database backend
 
 * Flexible, easily adapted to your needs from *within* the Web UI
 
-* ...
+* Inventory for samples
+
+* Complete audit trail of changes
+
+
+And to make it even more convenient for users and future-proof:
+
+* Open source project
+
+* Extensive documentation
 
 
 .. _sec-how_to_cite:
@@ -34,11 +46,16 @@ Features
 How to cite
 ===========
 
-The LabInform ELN is free software. However, if you use the LabInform ELN for your own research, please cite both, the article describing it and the software itself:
+The LabInform ELN is free software. However, if you use the LabInform ELN as crucial infrastructure component of your own research, please cite both, the article describing it and the software itself:
 
 * Mirjam Schröder, Till Biskup. LabInform ELN: A lightweight and flexible electronic laboratory notebook for academic research based on the open-source software DokuWiki. To be submitted.
 
-* ...
+* Till Biskup. Labinform ELN (2022). doi:10.5281/zenodo.#######
+
+To make things easier, the LabInform ELN has a `DOI <https://doi.org/10.5281/zenodo.#######>`_ provided by `Zenodo <https://zenodo.org/>`_, and you may click on the badge below to directly access the record associated with it. Note that this DOI refers to the software as such and always forwards to the most current version.
+
+.. image:: _static/zenodo.xxxxxxx.svg
+   :target: https://doi.org/10.5281/zenodo.#######
 
 
 
@@ -46,14 +63,14 @@ The LabInform ELN is free software. However, if you use the LabInform ELN for yo
 Where to start
 ==============
 
-...
+If you want to know what it is all about or are unsure whether the LabInform ELN is interesting for you, start :doc:`right at the beginning <audience>`. If you are a user of the LabInform ELN and look for how to do things, the :doc:`user manual <user/index>` should be the right place. If you want to install the LabInform ELN or are the person with IT competence in carge of keeping it running, have a look at the :doc:`administrator manual <admin/index>`. Finally, if you are interested in contributing to the LabInform ELN, the :doc:`developers corner <developer/index>` is the right place for you.
 
 
 
 Installation
 ============
 
-...
+Generally, DokuWiki requires a running web server and PHP, but no database. Hence, basic familiarity with setting up a web server and with the command line are necessary. The LabInform ELN builds upon a series of plugins for DokuWiki. Detailed installation instructions can be found in the :doc:`administrator manual <admin/index>`.
 
 
 
@@ -70,27 +87,40 @@ There is a number of related packages users of the LabInform ELN may well be int
 
 .. toctree::
    :maxdepth: 2
+   :caption: Overview:
+   :hidden:
+
+   audience
+   introduction
+   concepts
+   usecases
+
+
+.. toctree::
+   :maxdepth: 2
    :caption: User Manual:
    :hidden:
 
-   user/audience
-   user/introduction
-   user/concepts
-   user/usecases
+   user/index
+
 
 .. toctree::
    :maxdepth: 2
-   :caption: Admin Manual:
+   :caption: Administrator Manual:
    :hidden:
 
+   admin/index
    admin/installing
+   admin/organisation
+   admin/forms_templates
 
 
 .. toctree::
    :maxdepth: 2
-   :caption: Developers:
+   :caption: Developers Corner:
    :hidden:
 
+   developer/index
    developer/people
    developer/developers
    developer/changelog
@@ -100,7 +130,7 @@ There is a number of related packages users of the LabInform ELN may well be int
 License
 =======
 
-This program is free software: you can redistribute it and/or modify it under the terms of the **BSD License**. However, if you use the LabInform ELN for your own research, please cite it appropriately. See :ref:`How to cite <sec-how_to_cite>` for details.
+This program is free software: you can redistribute it and/or modify it under the terms of the **BSD License**. However, if you use the LabInform ELN as crucial infrastructure component of your own research, please cite it appropriately. See :ref:`How to cite <sec-how_to_cite>` for details.
 
 
 A note on the logo
