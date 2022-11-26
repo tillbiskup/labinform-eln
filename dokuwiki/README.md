@@ -19,7 +19,7 @@ This will add the name `eln` to the running container and bind-mount the local d
 
 To see the running LabInform ELN instance, navigate with your browser to [localhost:8081/](localhost:8081/)
 
-Currently, the credentials are super:admin
+Currently, the credentials are demo-admin:eln-admin and demo-user:eln-user
 
 
 ## Stop and remove the container

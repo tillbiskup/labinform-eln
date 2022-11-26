@@ -1,7 +1,6 @@
-
 **Important:** The term "sample" is ambiguous at first glance. Therefore, here is the definition that seems to make the most sense in the given context: 
 
-<note tip>**Sample.
+<note tip>**Sample.**
 The entity inserted into the spectrometer (e.g. in a tube) at the end of the day.</note>
 
 However, it should still be filed somehow if possible, if multiple tubes are made from a manufactured batch or if multiple things (different solvents etc.) are made from one batch.
