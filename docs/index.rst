@@ -12,9 +12,11 @@ Welcome! This is the documentation for the LabInform ELN component, the **electr
 Why yet another open-source ELN? Aren't there enough already? We are pretty certain that the LabInform ELN comes with some :ref:`unique features <sec-features>`, and we look back at already ten years of successful operation. However, rather than telling you into using the LabInform ELN, we explain the underlying design principles and highlight the decisions necessary to achieve a workflow fitting the local requirements and improving reproducibility and hence overall quality of science, besides helping with getting FAIRer data.
 
 .. important::
-    A demo of the LabInform ELN can be accessed online: `<https://eln.labinform.de/>`_
-    
+    A **demo of the LabInform ELN** can be accessed online: `<https://eln.labinform.de/>`_.
+
     The data contained in this demo will be deleted regularly. Nevertheless, don't enter any sensible data in there, as everybody will be able to access them.
+
+    For more information on how to use the LabInform ELN from a user perspective, have a look at the :doc:`user manual <user/index>`.
 
 
 
@@ -54,6 +56,21 @@ And to make it even more convenient for users and future-proof:
 * Open source project
 
 * Extensive documentation for :doc:`users <user/index>`, :doc:`administrators <admin/index>`, and :doc:`developers <developer/index>`
+
+
+Non-Features
+============
+
+A few things the LabInform ELN does not provide/implement:
+
+* Data store, aka repository
+* Research data catalogue
+* Management of measurement setups in the lab
+* General project management, including proposals and publications
+* General inventory for consumables
+* Analysis workflow for data
+
+The main reason lies in the "separation of concerns" (E. Dijkstra), focussing on one task at a time using one dedicated tool. Some of the "non-features" described above are, however, part of the `wider LabInform LIMS <https://www.labinform.de/>`_ the LabInform ELN is only one part of. If you are interested in a reproducible analysis workflow of spectroscopic data, have a look at the `ASpecD framework <https://docs.aspecd.de/>`_ and related packages.
 
 
 .. _sec-how_to_cite:

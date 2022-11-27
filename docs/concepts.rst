@@ -2,7 +2,7 @@
 Concepts
 ========
 
-...
+The concepts described below are not unique to the LabInform ELN, but in their entirety they make the LabInform ELN standing out from other similar solutions. Thus, they answer the question what makes the LabInform ELN different and why it is worth considering it -- and the underlying principles. As said, concepts are much more important than concrete implementations, as long as they get implemented in a working piece of software.
 
   * Small footprint: minimum system requirements, simple installation, no database backend
   * Wiki-based: simple, yet powerful markup; high flexibility
@@ -39,6 +39,9 @@ Inventory for samples
 =====================
 
 Inventory: Samples and batches
+
+.. note::
+    An inventory is not a key component of an ELN. Furthermore, the inventory shown here is mostly restricted to samples and does *not* include consumables in general. Inventories for consumables and particularly for chemicals have some requirements and constraints that are clearly out of scope of the LabInform ELN.
 
 
 Grouping by method
