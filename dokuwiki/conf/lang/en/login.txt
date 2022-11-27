@@ -7,3 +7,6 @@ To log in into this demo instance, use one of the two credentials:
 ^ Username   ^ Password  ^
 | demo-user  | eln-user  |
 | demo-admin | eln-admin |
+
+
+<note important>Please note that the **data contained in this demo will be deleted regularly**. Nevertheless, don't enter any sensible data in there, as everybody will be able to access them.</note>

@@ -17,10 +17,11 @@ To run the container:
 
 This will add the name `eln` to the running container and bind-mount the local directories `data/pages` and `data/media` accordingly.
 
+**Important:** The above command needs to be issued from within the `dokuwiki` directory or otherwise the paths for the volumes need to be adapted. Otherwise, your wiki will not work properly (not finding any content and complaining right away).
+
 To see the running LabInform ELN instance, navigate with your browser to [localhost:8081/](localhost:8081/)
 
 Currently, the credentials are demo-admin:eln-admin and demo-user:eln-user
-
 
 ## Stop and remove the container
 
