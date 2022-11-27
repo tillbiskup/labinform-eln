@@ -1,22 +1,15 @@
-========
-Usecases
-========
+=========
+Use cases
+=========
 
-...
+.. note::
 
-
-Adding a sample to the inventory
-================================
-
-One of the operating principles of the LabInform ELN states that every measurement gets performed on a sample. Hence, before you can create a labbook entry (*i.e.*, a dedicated page containing information on a measurement), you should first add a sample to the inventory, in order to reference the sample from the labbook page.
-
-Samples are the object that is investigated, *i.e.* in spectroscopy the entity that is put into the spectrometer.
-
-Each sample, in turn, originates from a batch, as usually, you will prepare the sample in some way or other, before it gets measured.
+    *Internal memo*: The use cases described here should be on a rather abstract level, describing overall tasks to be performed with an ELN, rather than the details of how to achieve these tasks within the LabInform ELN. The latter will be done in the :doc:`user manual <user/index>`.
 
 
-Creating a labbook entry
-========================
+Ideas for use cases:
 
-The LabInform ELN is organised such that for each measurement on a sample, usually an individual labbook entry is created. To ease creating labbook entries, web forms are provided.
+  * Document an individual measurement of a sample (*i.e.*, a single labbook entry)
+  * Get an overview of all the measurements performed on a particular sample
+  * Get an overview of all the measurements performed with a method, sortable and with filtering capabilities
 

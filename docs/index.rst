@@ -9,7 +9,7 @@ LabInform ELN documentation
 
 Welcome! This is the documentation for the LabInform ELN component, the **electronic laboratory notebook (ELN)** that is part of the `LabInform laboratory information and management system <https://www.labinform.de/>`_ (LIMS).
 
-Why yet another open-source ELN? Aren't there enough already? We are pretty certain that the LabInform ELN comes with some :ref:`unique features <sec-features>`, and we look back at already ten years of successful operation, though mostly restricted to a single lab but different people (and installations).
+Why yet another open-source ELN? Aren't there enough already? We are pretty certain that the LabInform ELN comes with some :ref:`unique features <sec-features>`, and we look back at already ten years of successful operation. However, rather than telling you into using the LabInform ELN, we explain the underlying design principles and highlight the decisions necessary to achieve a workflow fitting the local requirements and improving reproducibility and hence overall quality of science, besides helping with getting FAIRer data.
 
 .. important::
     A demo of the LabInform ELN can be accessed online: `<https://eln.labinform.de/>`_
@@ -53,7 +53,7 @@ And to make it even more convenient for users and future-proof:
 
 * Open source project
 
-* Extensive documentation
+* Extensive documentation for :doc:`users <user/index>`, :doc:`administrators <admin/index>`, and :doc:`developers <developer/index>`
 
 
 .. _sec-how_to_cite:
@@ -65,7 +65,7 @@ The LabInform ELN is free software. However, if you use the LabInform ELN as cru
 
 * Mirjam Schröder, Till Biskup. LabInform ELN: A lightweight and flexible electronic laboratory notebook for academic research based on the open-source software DokuWiki. To be submitted.
 
-* Till Biskup. Labinform ELN (2022). doi:10.5281/zenodo.#######
+* Mirjam Schröder, Till Biskup. Labinform ELN (2022). doi:10.5281/zenodo.#######
 
 To make things easier, the LabInform ELN has a `DOI <https://doi.org/10.5281/zenodo.#######>`_ provided by `Zenodo <https://zenodo.org/>`_, and you may click on the badge below to directly access the record associated with it. Note that this DOI refers to the software as such and always forwards to the most current version.
 
@@ -117,6 +117,7 @@ There is a number of related packages users of the LabInform ELN may well be int
    :hidden:
 
    user/index
+   user/workflow
 
 
 .. toctree::

@@ -26,7 +26,8 @@ release = release_
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
-#    'sphinx_multiversion',
+    'sphinx.ext.todo',
+    #    'sphinx_multiversion',
 #    'sphinxcontrib.bibtex',
     ]
 
@@ -55,3 +56,9 @@ html_favicon = './labinform-favicon.ico'
 html_last_updated_fmt = '%Y-%m-%d'
 
 numfig = True
+
+# -- Options for todo extension ----------------------------------------------
+
+# If true, `todo` and `todoList` produce output, else they produce nothing.
+todo_include_todos = True
+todo_link_only = True
