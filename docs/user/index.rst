@@ -10,7 +10,7 @@ Prerequisites
 
 This user manual assumes a **working installation of the LabInform ELN** to be available. In case you need to first install the LabInform ELN, see the :doc:`administrator manual </admin/index>`.
 
-Furthermore, **basic familiarity with the formatting syntax of Dokuwiki** is assumed, as each individual page (be it for samples, labbook entries, or else) is a wiki page using the DokuWiki markup. Those new to DokuWiki may have a look at the `excellent official documentation of the DokuWiki syntax <https://www.dokuwiki.org/wiki:syntax>`_.
+Furthermore, **basic familiarity with the formatting syntax of Dokuwiki** is assumed, as each individual page (be it for labbook entries, samples, or else) is a wiki page using the DokuWiki markup. Those new to DokuWiki may have a look at the `excellent official documentation of the DokuWiki syntax <https://www.dokuwiki.org/wiki:syntax>`_.
 
 
 Contents
@@ -18,4 +18,17 @@ Contents
 
   * :doc:`Workflow <workflow>`
 
-    Can we add text here that gets indented?
+    The overall workflow of the LabInform ELN as implemented in the demo instance and used in the authors' lab is described. For details of the individual aspects, refer to the sections of the manual referenced below.
+
+  * :doc:`Batches <batches>`
+
+    ...
+
+  * :doc:`Samples <samples>`
+
+    ...
+
+  * :doc:`Measurements <measurements>`
+
+    ...
+

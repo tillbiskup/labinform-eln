@@ -135,6 +135,9 @@ There is a number of related packages users of the LabInform ELN may well be int
 
    user/index
    user/workflow
+   user/batches
+   user/samples
+   user/measurements
 
 
 .. toctree::
