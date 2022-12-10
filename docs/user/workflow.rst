@@ -11,7 +11,7 @@ The basic idea behind the LabInform ELN is to provide a maximum of reproducibili
     Actually, two workflows will be described: documenting measurements and dcumenting quantum-chemical calculations. The reason to show both is two-fold: (i) demonstrate the flexibility of the ELN approach chosen here, and (ii) the need for many spectroscopists to perform QC calculations to support the interpretation of their experimental results.
 
 .. important::
-    Here, the workflows are described on a more general level. For the details, such as the individual forms and the explanation for the fields they contain, see the respective individual pages of the user manual.
+    Here, the workflows are described on a more general (and abstract) level. For the details, such as the individual forms and the explanation for the fields they contain, see the respective individual pages of the user manual.
 
 
 Documenting measurements
@@ -21,7 +21,7 @@ As mentioned, the LabInform ELN has been developed in a spectroscopic laboratory
 
 The workflow described here for documenting (spectroscopic) measurements consists of three elements: an individual measurement is always performed on a sample, and a sample originates from a batch. While batches and samples strictly speaking belong to the inventory, documenting the individual measurements is at the heart of scientific recordkeeping and hence (electronic) laboratory notebooks.
 
-.. figure:: ../images/workflow-measurements.png
+.. figure:: ../images/workflow-measurement.png
 
     General workflow for documenting measurements: A measurement is always performed on a sample that in turn originates from a batch. Hence, to document a measurement, you first need to add a batch and a sample to the inventory and afterwards reference the sample in the measurement documentation. batch -> sample -> measurement
 
@@ -72,7 +72,7 @@ While documenting measurements in a laboratory has long been (and in many cases 
 Similarly to the workflow described above for documenting measurements, the workflow for documenting calculations consists of three individual elements: molecules, geometries, and actual calculations. While there can and usually will exist several geometries of the same molecule, calculations are always performed on a given geometry. The result of a calculation can be a different geometry (in case of geometry optimisations and alike) or parameters, or both.
 
 
-.. figure:: ../images/workflow-calculations.png
+.. figure:: ../images/workflow-calculation.png
 
     General workflow for documenting quantum-chemical calculations: Calculations are performed on geometries that belong to a molecule. There can (and usually will) be more than one geometry for a molecule. The results of calculations can be new geometries, parameters, or both. molecule -> geometry -> calculation
 
