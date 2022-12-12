@@ -23,7 +23,7 @@ The workflow described here for documenting (spectroscopic) measurements consist
 
 .. figure:: ../images/workflow-measurement.png
 
-    General workflow for documenting measurements: A measurement is always performed on a sample that in turn originates from a batch. Hence, to document a measurement, you first need to add a batch and a sample to the inventory and afterwards reference the sample in the measurement documentation. batch -> sample -> measurement
+    General workflow for documenting measurements: A measurement is always performed on a sample that in turn originates from a batch. Hence, to document a measurement, you first need to add a batch and a sample to the inventory and afterwards reference the sample in the measurement documentation.
 
 
 Adding a batch and a sample to the inventory
@@ -55,7 +55,7 @@ Creating a labbook entry for an individual measurement
 
 The LabInform ELN is organised such that for each measurement on a sample, usually an individual labbook entry is created. To simplify creating labbook entries and to ensure a minimum consistent set of metadata, web-forms are provided. These metadata are shown as a table on top of each labbook entry, and hence as a rule of thumb, as soon as one of these parameters changes, you should create a new labbook entry (*i.e.*, wiki page) - and perhaps cross-reference from and to the entry before.
 
-Important field: purpose
+An important field that shall not be underestimated is "purpose": Usually you have an idea why you perform a measurement, at least at the time of data acquisition. Recording this information and including it into an overview table of measurements can help dramatically with finding the relevant labbook entry.
 
 Next to the metadata forming the header of the labbook entry is a detailed chronological protocol of what has been done. Not only the start and end of a measurement should be recorded. Often it does matter when the measurement device and the cooling system (if applicable) have been switched on, and there will be many more details worth mentioning.
 
@@ -74,6 +74,6 @@ Similarly to the workflow described above for documenting measurements, the work
 
 .. figure:: ../images/workflow-calculation.png
 
-    General workflow for documenting quantum-chemical calculations: Calculations are performed on geometries that belong to a molecule. There can (and usually will) be more than one geometry for a molecule. The results of calculations can be new geometries, parameters, or both. molecule -> geometry -> calculation
+    General workflow for documenting quantum-chemical calculations: Calculations are performed on geometries that belong to a molecule. There can (and usually will) be more than one geometry for a molecule. The results of calculations can be new geometries, parameters, or both.
 
 
