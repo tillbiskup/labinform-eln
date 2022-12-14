@@ -11,7 +11,6 @@ Solvent                  : @@Solvent|@@ #
 State_state              : @@State|@@ # 
 Storage_storage          : @@Storage|@@ # 
 Batch_pagebatch          : @@Batch|@@ # 
-Synthesis_pagesynthesis_ : @@Synthesis|@@ # 
 ----
 
 

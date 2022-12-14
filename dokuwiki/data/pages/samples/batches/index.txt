@@ -21,7 +21,6 @@ textbox       "Solvent" !
 data_aliastextbox   "State" _state ! =exists
 data_aliastextbox   "Storage" _storage ! =-70°C
 data_aliastextbox   Batch _pagebatch !
-data_aliastextbox   Synthesis _pagesynthesis !
 static        "Code is, e.g., the  batch designation of the manufacturer"
 thanks        "Thanks for your entry."
 submit        "Create entry"

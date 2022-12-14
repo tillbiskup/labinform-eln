@@ -64,4 +64,4 @@ Overview tables
 Footnotes
 =========
 
-.. [#note] Is it possible to setup interwiki links from within the admin interface?
+.. [#note] Is it possible to setup interwiki links from within the admin interface? Yes, using the ``configuration file manager`` plugin
