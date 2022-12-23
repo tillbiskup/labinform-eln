@@ -1,6 +1,8 @@
 Batches
 =======
 
+As described in the :doc:`workflow <./workflow>`, when documenting measurements, each measurement is carried out on an individual sample that in turn is derived from a batch. Hence, before creating labbook entries, you will first need to create a batch and a sample. This may appear unnecessarily complicated at first, but it tremendously helps with organising your measurements and finding and accessing all relevant information.
+
 
 Create a new batch
 ------------------
