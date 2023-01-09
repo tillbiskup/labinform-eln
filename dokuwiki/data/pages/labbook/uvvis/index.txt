@@ -5,11 +5,12 @@
 //Overview of all UV/vis measurements//
 
 ---- datatable ----
-cols    : %pageid%, sample, sampleno_sa, temperature, purpose
-headers : Details, Sample, No., Temp., Purpose
-filter  : type~Labbook
-filter  : %pageid%!~*template*
-filter  : experiment=UVvis
-sort    : ^date
+cols       : %pageid%, sample, sampleno_sa, temperature, purpose
+headers    : Details, Sample, No., Temp., Purpose
+filter     : type~Labbook
+filter     : %pageid%!~*template*
+filter     : experiment=UVvis
+sort       : ^date
+dynfilters : 1
 ----
 

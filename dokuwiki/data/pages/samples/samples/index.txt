@@ -31,10 +31,11 @@ submit        "Create entry"
 
 
 ---- datatable ----
-cols    : ID, %pageid%, Batch_pagebatch, Substrate_pagesubstrate, Date, Measured, State, Storage
-headers : ID, Description, Batch, Substrate, Date, Measured, State, Storage
-filter  : type~Samples
-filter  : %pageid%!~*template*
-sort    : ^%pageid%
+cols       : ID, %pageid%, Batch_pagebatch, Substrate_pagesubstrate, Date, Measured, State, Storage
+headers    : ID, Description, Batch, Substrate, Date, Measured, State, Storage
+filter     : type~Samples
+filter     : %pageid%!~*template*
+sort       : ^%pageid%
+dynfilters : 1
 ----
 

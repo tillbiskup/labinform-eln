@@ -31,11 +31,12 @@ submit        "Create entry"
 
 
 ---- datatable ----
-cols    : ID, %pageid%, Substance, Date, Code, Solvent, State, Storage
-headers : ID, Details, Substance, Date, Code, Solvent, State, Storage
-filter  : type~Batches
-filter  : %pageid%!~*template*
-sort    : ^%pageid%
+cols       : ID, %pageid%, Substance, Date, Code, Solvent, State, Storage
+headers    : ID, Details, Substance, Date, Code, Solvent, State, Storage
+filter     : type~Batches
+filter     : %pageid%!~*template*
+sort       : ^%pageid%
+dynfilters : 1
 ----
 
 
