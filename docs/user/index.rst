@@ -2,7 +2,7 @@
 Overview
 ========
 
-This user manual addresses the users of the LabInform ELN, *i.e.* the people working in the lab, using the ELN as a tool for their daily work. While the underlying DokuWiki provides you with a lot of flexibility in how you arrange and organise the individual entries, changing templates and forms according to the needs are the responsibility of administrators and are hence described in the :doc:`administrator manual </admin/index>`.
+This user manual addresses the **users of the LabInform ELN**, *i.e.* the people working in the lab, using the ELN as a tool for their daily work. While the underlying DokuWiki provides you with a lot of flexibility in how you arrange and organise the individual entries, changing templates and forms according to the needs are the responsibility of administrators and are hence described in the :doc:`administrator manual </admin/index>`.
 
 
 Prerequisites
