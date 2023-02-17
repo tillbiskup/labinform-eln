@@ -1,9 +1,9 @@
 {{fa>info-circle?48&align=right}}
  ====== Intro ======
 
-**Science is** by its very nature **a systematic endeavor**, and everyday life shows that there is a great deal of information that is needed again and again. Therefore, it makes sense to store this information, as far as possible, in one place in a clear and structured manner.
+**Science is** by its very nature **a systematic endeavor**, and everyday life shows that there is a great deal of information that is needed again and again. Therefore, it makes sense to store this information, as far as possible, in one place in a clear and structured manner. Nevertheless, surprise and unexpected situations are part of science as well. Hence, whatever system to help us document our science we choose, it needs to be modular and flexible enough to adapt to our (changing) requirements.
 
-Since all this information changes again and again and one would like to access it in the most different situations, a static document on a computer is rather clumsy. Therefore, a web-based solution and here in particular a **wiki**, which allows access and changes directly from the web browser, is a good choice.
+All the information we record changes time and again, and we would like to access it in the most different situations. Hence, a static document on a computer is rather clumsy. Therefore, a web-based solution and here in particular a **wiki**, which allows access and changes directly from the web browser, is a good choice.
 
 The ELN component of LabInform presented here targets (small) working groups, not just individual researchers. If necessary, access to individual areas can be restricted/adapted accordingly for each user. Of course, due to the generally confidential content, it is still a **closed wiki**: Access is basically only possible after registration (with personalized user account).
 

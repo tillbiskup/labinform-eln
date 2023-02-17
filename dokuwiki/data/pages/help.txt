@@ -1,4 +1,4 @@
-The LabInform Wiki is divided into sections at the top level, each of which is grouped together again. Each area is represented by its own symbol.
+The LabInform ELN is divided into sections at the top level, each of which is grouped together again. Each area is represented by its own symbol.
 
 The individual sections can also be accessed from the sidebar on the left. Within the individual areas there are basically overview pages, which serve the navigation.
 

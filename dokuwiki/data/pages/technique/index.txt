@@ -6,6 +6,8 @@
 
 //A few words about the technology behind the ELN component of LabInform.//
 
+For a more detailed documentation of the Labinform ELN for users, administrators, and developers, have a look at [[https://eln.docs.labinform.de/]].
+
 
 ===== Basis: DokuWiki with a number of extensions =====
 

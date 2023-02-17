@@ -34,7 +34,13 @@
 </WRAP>
 
 <WRAP third column>
-<wrap hide>.</wrap>
+<WRAP box round>
+[[.:syntheses:|{{fa>industry?48}}]]
+
+===== Syntheses =====
+
+[[.:syntheses:|own synthesis of a substance]]
+</WRAP>
 </WRAP>
 </WRAP>
 
