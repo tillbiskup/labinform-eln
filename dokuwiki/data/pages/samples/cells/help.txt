@@ -1,0 +1,6 @@
+For optical spectroscopy, typically cells are used as sample containers.
+
+This area of the LabInform ELN provides an inventory of the available cells in a given lab. As cells are typically expensive and made from quartz glass, they are handled with care and reused over long time (years to decades). Nevertheless, you will typically want to list here the different types of optical cells, not the individual cell as such. If, however, you go for listing each individual cell, you will need to add a field for a unique name, or alternatively number your cells physically with the IDs from within the LabInform ELN.
+
+As optical cells are usually manufactured by either Hellma or Starna, and Hellma seems the most widespread, type designation and material refer to the information provided by Hellma. Change according to your needs.
+

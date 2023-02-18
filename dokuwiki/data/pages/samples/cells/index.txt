@@ -6,6 +6,12 @@
 
 //Cells for all kinds of optical spectroscopy.//
 
+++++ Explanations |
+
+{{page>.:help&inline}}
+
+++++
+
 
 ===== Create new cell entry =====
 
