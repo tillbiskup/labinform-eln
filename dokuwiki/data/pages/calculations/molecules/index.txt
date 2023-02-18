@@ -1,0 +1,35 @@
+====== Molecules ======
+
+//A "molecule" is always the starting point of a  [[..:geometries:|geometry]] that in turn is used to perform calculation upon.//
+
+
+===== Create new molecule entry =====
+
+A molecule always has a name that is as meaningful as possible. If for a given molecule there exists a real (physically present) [[..:..:samples:batches:|batch]] that was used as starting point for [[..:..:samples:samples:|samples]] that usually were measured in some way or other, you can optionally add the ID of this [[..:..:samples:batches:|batch]].
+
+<form>
+Action template :calculations:molecules:template_molecule :calculations:molecules:@@No@@
+labels labels
+
+Fieldset      "New entry for molecule"
+hiddenautoinc "No"
+static        "Necessary fields"
+textbox       "Name"
+static        "Optional fields"
+data_aliastextbox "Batch" _pagebatch !
+thanks        "Thanks for your entry."
+submit        "Create entry"</form>
+
+
+===== List of molecules =====
+
+
+---- datatable ----
+cols       : ID, %pageid%, Batch_pagebatch
+headers    : ID, Details, Batch
+filter     : type~Molecules
+filter     : %pageid%!~*template*
+sort       : ^pageid
+dynfilters : 1
+----
+

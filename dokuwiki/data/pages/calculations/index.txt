@@ -4,12 +4,12 @@
 
 ====== Calculations ======
 
-//(quantumchemical) Calculations//
+//(quantum chemical) Calculations//
 
 
 ++++ Explanations |
 
-{{page>.:hilfe&inline}}
+{{page>.:help&inline}}
 
 ++++
 

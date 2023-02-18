@@ -1,0 +1,27 @@
+====== @@No@@ – @@Name@@ ======
+
+---- dataentry molecule ----
+type_hidden         : Molecule
+ID                  : @@No@@
+Name                : @@Name@@ 
+Batch_pagebatch     : @@Batch|@@
+----
+
+
+===== Geometries =====
+
+---- datatable ----
+cols       : ID, %%pageid%%, optimised, multiplicity
+headers    : ID, Geometry, Optimised, Multiplicity
+filter     : type~Geometries
+filter     : %%pageid%%!~*template*
+filter     : Molecule~@@No@@
+sort       : ^pageid
+dynfilters : 1 
+----
+
+
+===== Comments =====
+
+...
+

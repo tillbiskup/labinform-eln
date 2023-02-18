@@ -1,0 +1,51 @@
+====== @@No@@ – @@Type@@ ======
+
+---- dataentry calculation ----
+type_hidden                : Calculations
+ID                         : @@No@@
+Date                       : @@Date@@
+Geometry_pagegeometry      : @@Geometry@@ 
+Functional_dftfunctional   : @@Functional@@
+Basisset_dftbasisset       : @@Basisset@@
+Environment_dftenvironment : @@Environment@@
+converged_bool             : @@converged@@
+Type                       : @@Type@@ 
+----
+
+===== Comments =====
+
+...
+
+
+===== Metadata =====
+
+<file "yaml" calculation-@@No@@.yaml>
+---
+format:
+  type: LabInform quantum chemical calculations
+  version: 0.1.0
+
+general:
+  date: @@Date@@
+  operator: @NAME@
+  id: @@No@@
+  purpose: @@Type@@
+
+calculation:
+  functional: @@Functional@@
+  basisset: @@Basisset@@
+  environment: @@Environment@@
+
+geometry:
+  id: @@Geometry@@
+
+result:
+  converged: @@converged@@
+  geometry: <id>
+
+software:
+  name: ORCA
+  version: 3.0.3
+  os: Linux
+</file>
+

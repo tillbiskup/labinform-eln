@@ -1,0 +1,48 @@
+====== Geometries ======
+
+//A geometry is a structure (coordinates) that is used to calculate upon. Each geometry belongs to a [[..:molecules:|molecule]]. A geometry optimisation is performed on a starting geometry and results in another, new geometry that is added using the form below.//
+
+**Hint:** Geometries are numbered subsequently, regardless of the molecules the belong to.
+
+
+===== Create new geometry entry =====
+
+For "molecule" enter the ID of the associated [[..:molecules:|molecule]], for "description" provide a concise (and unique) string containing information about the conformation (*e.g.*, "cis-cis") as well as the spin multiplicity (singlet, doublet, triplet) and whether the geometry has been optimised or not.
+
+
+<form>
+Action template :calculations:geometries:template_geometry :calculations:geometries:@@No@@
+labels labels
+
+Fieldset          "New entry for geometry"
+hiddenautoinc     "No"
+data_aliastextbox "Molecule" _pagemolecule
+textbox           "Description"
+data_aliastextbox "Multiplicity" _multiplicity
+data_aliastextbox "optimised" _bool
+
+fieldset          "Software used to create the geometry" "optimised" "false"
+textbox           "Program" !
+textbox           "Version" !
+data_aliastextbox "OS" _os_ !
+
+fieldset          "Underlying calculation" "optimised" "true"
+data_aliastextbox "Calculation" _pagecalculation
+
+fieldset          "Submit form"
+thanks            "Thanks for your entry."
+submit            "Create entry"
+</form>
+
+===== List of geometries =====
+
+
+---- datatable ----
+cols       : ID, Molecule_pagemolecule, %pageid%, Multiplicity, optimised
+headers    : ID, Molecule, Geometry, Multiplicity, optimised
+filter     : type~Geometries
+filter     : %pageid%!~*template*
+sort       : ^pageid
+dynfilters : 1
+----
+

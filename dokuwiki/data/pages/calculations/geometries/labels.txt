@@ -1,0 +1,8 @@
+  * Molecule = Molecule (ID)
+  * Description
+  * Multiplicity
+  * optimised
+  * Calculation = Calculation (ID)
+  * Program
+  * Version
+  * OS = Operating system

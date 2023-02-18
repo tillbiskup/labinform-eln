@@ -1,0 +1,7 @@
+  * Date 
+  * Geometry = Geometry (ID)
+  * Type = Type (purpose)
+  * Functional
+  * Basisset
+  * converged
+  * Environment

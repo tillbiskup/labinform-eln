@@ -1,0 +1,40 @@
+====== Calculations ======
+
+//A calculation is always carried out on a [[..:geometries:|geometry]] that in turn belongs to a  [[..:molecules:|molecule]]. A geometry optimisation is a calculation based on an initial geometry, but resulting in a new geometry that needs to be entered manually as new [[..:geometries:|geometry]].//
+
+**Hint:** Calculations are **numbered subsequently** regardless of the geometries they are based upon.
+
+
+===== Create new calculation entry =====
+
+For "geometry" enter the ID of the respective [[..:geometries:|geometry]] the calculation is based upon. The list for "type" provides short and concise descriptions.
+
+<form>
+Action template :calculations:calculations:template_calculation :calculations:calculations:@@No@@
+labels labels
+
+Fieldset          "New entry for calculation"
+hiddenautoinc     "No"
+date              "Date"
+data_aliastextbox "Geometry" _pagegeometry 
+data_aliastextbox "Type" _calctype
+data_aliastextbox "Functional" _dftfunctional 
+data_aliastextbox "Basisset" _dftbasisset 
+data_aliastextbox "converged" _bool
+data_aliastextbox "Environment" _dftenvironment
+thanks            "Thanks for your entry."
+submit            "Create entry"
+</form>
+
+===== List of calculations =====
+
+
+---- datatable ----
+cols       : ID, Geometry_pagegeometry, %pageid%, Functional, Basissset, Environment, converged
+headers    : ID, Geometry, Details, Functional, Basisset, Environment, converged
+filter     : type~Calculations
+filter     : %pageid%!~*template*
+sort       : ^pageid
+dynfilters : 1
+----
+

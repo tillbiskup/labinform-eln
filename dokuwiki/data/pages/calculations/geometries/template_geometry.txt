@@ -1,0 +1,63 @@
+====== @@No@@ – @@Description@@ ======
+
+---- dataentry geometry ----
+type_hidden               : Geometries
+ID                        : @@No@@ #
+Name                      : @@Description@@ #
+Multiplicity_multiplicity : @@Multiplicity@@ #
+optimised_bool            : @@optimised@@ #
+Molecule_pagemolecule     : @@Molecule@@ #
+----
+
+===== Comments =====
+
+...
+
+
+===== List of calculations =====
+
+
+---- datatable ----
+cols       : %%pageid%%, Date, Functional, Basisset
+headers    : Details, Date, Functional, Basisset
+filter     : type~Calculations
+filter     : %%pageid%%!~*template*
+filter     : Geometry~@@No@@
+sort       : ^pageid
+dynfilters : 1
+----
+
+
+===== Metadata =====
+
+<file "yaml" geometry-@@No@@.yaml>
+---
+format:
+  type: LabInform molecular coordinates
+  version: 0.1.0
+
+general:
+  date: @YEAR@-@MONTH@-@DAY@
+  operator: @NAME@
+  id: @@No@@
+
+geometry:
+  optimised: @@optimised@@
+  multiplicity: @@Multiplicity@@
+
+molecule:
+  id: @@Molecule@@
+
+# If "optimised" in block "geometry" is "true", provide ID of calculation
+# Otherwise, just delete this block
+calculation:
+  id: @@Calculation|@@
+
+# If "optimised" in block "geometry" is "false"
+# Otherwise, just delete this block
+software:
+  name: @@Program|@@
+  version: @@Version|@@
+  os: @@OS|@@
+</file>
+

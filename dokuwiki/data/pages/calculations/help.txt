@@ -1,0 +1,10 @@
+**Important:** The terms "molecule" and "geometry" are not necessarily obvious at first glance. Therefore, here is a rule of thumb:
+
+  ; Molecule
+  : Chemical structure without consideration of conformations etc.\\ For every molecule there is at least one geometry.
+  ; Geometry
+  : The structure (coordinates) on which real calculations are made at the end.\ Each geometry belongs to a molecule.
+
+For each molecule there is at least one geometry, and only the geometries are actually calculated on. Conversely, each geometry (i.e. the structure on which the calculation was performed) belongs to a molecule.
+
+A geometry optimisation is carried out on an initial geometry, but then in turn leads to a new geometry, which is stored accordingly.
