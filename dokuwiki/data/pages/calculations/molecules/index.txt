@@ -13,9 +13,7 @@ labels labels
 
 Fieldset      "New entry for molecule"
 hiddenautoinc "No"
-static        "Necessary fields"
 textbox       "Name"
-static        "Optional fields"
 data_aliastextbox "Batch" _pagebatch !
 thanks        "Thanks for your entry."
 submit        "Create entry"</form>
