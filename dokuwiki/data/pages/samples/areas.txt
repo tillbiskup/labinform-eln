@@ -2,6 +2,7 @@
 
 [[:samples:batches:|{{fa>archive}}]] [[:samples:batches:|Batches]]\\
 [[:samples:samples:|{{fa>flask}}]] [[:samples:samples:|Samples]]\\
+[[:samples:syntheses:|{{fa>industry}}]] [[:samples:syntheses:|Syntheses]]\\
 
 [[:samples:cells:|{{fa>square}}]] [[:samples:cells:|Cells]]\\
 [[:samples:tubes:|{{fa>circle}}]] [[:samples:tubes:|Tubes]]\\

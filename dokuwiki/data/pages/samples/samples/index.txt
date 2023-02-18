@@ -7,6 +7,7 @@
 
 <form>
 Action template template_sample :samples:samples:@@No@@
+labels labels
 
 Fieldset      "New entry for samples"
 hiddenautoinc "No"

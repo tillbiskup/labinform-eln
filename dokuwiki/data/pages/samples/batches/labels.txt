@@ -1,0 +1,9 @@
+  * Name
+  * Substance
+  * Date
+  * Supply source
+  * Code = Code (e.g., batch designation of manufacturer)
+  * Solvent
+  * State
+  * Storage = Storage (place)
+  * Batch = Batch (ID)

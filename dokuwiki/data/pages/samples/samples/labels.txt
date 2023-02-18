@@ -1,0 +1,11 @@
+  * Description = Description
+  * Date = Date
+  * Batch = Batch (ID)
+  * Cell = Cell (ID)
+  * Tube = Tube (ID)
+  * Substrate = Substrate (ID)
+  * Concentration = Concentration
+  * Measured = Measured
+  * State = State
+  * Storage = Storage (place)
+
