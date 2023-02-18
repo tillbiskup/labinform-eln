@@ -1,0 +1,2 @@
+This area of the LabInform ELN provides an inventory of the available substrates in a given lab. Depending on the material and the use case, substrates can be anything from cheap (PET foil) to highly expensive (precision-manufactured thin quartz glass slides). Nevertheless, you will typically want to list here only the different types of support material, not the individual pieces of substrate, although a precision-made quartz glass slide fitting into an EPR tube can cost up to 50 EUR and may be reused several times.
+

@@ -1,0 +1,7 @@
+  * Kind = Kind (standard, Schlenk)
+  * Material = Material
+  * Description = Description (e.g., exact material type)
+  * Manufacturer = Manufacturer
+  * Diameter = Diameter (outer)
+  * Thickness = Thickness (wall)
+

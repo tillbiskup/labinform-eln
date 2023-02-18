@@ -40,9 +40,10 @@ For an overview of the material and the abbreviations used see the respective [[
 
 
 ---- datatable ----
-cols    : ID, %pageid%, Kind, Manufacturer, Code, Material, Path, Bottom, Volume
-headers : ID, Details, Kind, Manuf., Code, Mat., Path, Bottom, Volume
-filter  : type~Cells
-filter  : %pageid%!~*template*
-sort    : ^%pageid%
+cols       : ID, %pageid%, Kind, Manufacturer, Code, Material, Path, Bottom, Volume
+headers    : ID, Details, Kind, Manuf., Code, Mat., Path, Bottom, Volume
+filter     : type~Cells
+filter     : %pageid%!~*template*
+sort       : ^%pageid%
+dynfilters : 1
 ----

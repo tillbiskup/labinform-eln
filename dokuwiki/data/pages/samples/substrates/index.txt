@@ -5,18 +5,24 @@
 //Substrates are (optionally) used as sample support.//
 
 
+++++ Explanations |
+
+{{page>.:help&inline}}
+
+++++
+
+
 ===== Create new substrate entry =====
 
 <form>
 Action template template_substrate :samples:substrates:@@No@@
+labels labels
 
 Fieldset      "New entry for substrate"
 hiddenautoinc "No"
 textbox       "Material"
-static        "(PET, Glas, ...)"
 textbox       "Description"
-static        "(genauer Typ)"
-textbox       "Manufacturer" !
+textbox       "Supply source" !
 thanks        "Thanks for your entry."
 submit        "Create entry"
 </form>
@@ -26,10 +32,11 @@ submit        "Create entry"
 
 
 ---- datatable ----
-cols    : ID, %pageid%, Material, Description, Manufacturer
-headers : ID, Details, Material, Description, Manufacturer
-filter  : type~Substrates
-filter  : %pageid%!~*template*
-sort    : ^%pageid%
+cols       : ID, %pageid%, Material, Description, Supply source
+headers    : ID, Details, Material, Description, Source
+filter     : type~Substrates
+filter     : %pageid%!~*template*
+sort       : ^%pageid%
+dynfilters : 1
 ----
 

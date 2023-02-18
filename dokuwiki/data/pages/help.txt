@@ -4,4 +4,4 @@ The individual sections can also be accessed from the sidebar on the left. Withi
 
 For each area there is an explanation like this one, which can be expanded.
 
-New here? The **[[:intro:|general introduction]]** is certainly a good starting point to get warm with the ELN component of LabInform.
+New here? The **[[:intro:|general introduction]]** is certainly a good starting point to get warm with the ELN component of LabInform. For a more detailed documentation of the Labinform ELN for users, administrators, and developers, have a look at [[https://eln.docs.labinform.de/]].

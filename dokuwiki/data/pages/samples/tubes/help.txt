@@ -1,0 +1,4 @@
+For magnetic resonance spectroscopy, typically tubes are used as (temporary) sample containers (with the exception of solid-state NMR, where rotors are used).
+
+This area of the LabInform ELN provides an inventory of the available (glass) tubes in a given lab. While NMR tubes are typically "recycled" and used over long time for a series of different samples, in EPR, more often one tube contains one sample and this tube will be stored for long(er) time somewhere. In any case, you will typically want to list here the different types of (glass) tubes, not individual tubes as such.
+

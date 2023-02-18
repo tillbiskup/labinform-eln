@@ -12,21 +12,21 @@
 <WRAP group centeralign>
 <WRAP third column>
 <WRAP box round>
-[[.:labbook:|{{fa>book?48}}]]
-
-===== Labbook =====
-
-[[.:labbook:|Electronic Lab Notebook (ELN) for experiments]]
-</WRAP>
-</WRAP>
-
-<WRAP third column>
-<WRAP box round>
 [[.:samples:|{{fa>flask?48}}]]
 
 ===== Samples =====
 
 [[.:samples:|Samples, Syntheses, sample containers]]
+</WRAP>
+</WRAP>
+
+<WRAP third column>
+<WRAP box round>
+[[.:labbook:|{{fa>book?48}}]]
+
+===== Labbook =====
+
+[[.:labbook:|Electronic Lab Notebook (ELN) for experiments]]
 </WRAP>
 </WRAP>
 

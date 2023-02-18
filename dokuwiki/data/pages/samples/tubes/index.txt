@@ -1,36 +1,43 @@
 ~~NOTOC~~
 
-{{fa>circle?48&align=right}} ====== Tubes ======
+{{fa>circle?48&align=right}}
+ ====== Tubes ======
 
+//Sample containers primarily for magnetic resonance spectroscopy (EPR, NMR)//
 
-<note important>Template doesn't exist yet. Fields need to be discussed and adjusted. Focus here on EPR tubes.</note>
+++++ Explanations |
+
+{{page>.:help&inline}}
+
+++++
 
 
 ===== Create new tube entry =====
 
 <form>
 Action template template_tube :samples:tubes:@@No@@
+labels labels
 
-Fieldset      "New entry for tubes"
-hiddenautoinc "No"
-textbox       "Kind"
-static        "(Standard, Schlenk,...)"
-textbox       "Diameter"
-textbox       "Description"
-static        "(exact type)"
-textbox       "Manufacturer" !
-thanks        "Thanks for your entry."
-submit        "Create entry"
+Fieldset          "New entry for tubes"
+hiddenautoinc     "No"
+data_aliastextbox "Material" _tubematerial
+textbox           "Description" !
+textbox           "Manufacturer"
+textbox           "Diameter" ="5 mm"
+textbox           "Thickness" ="0.1 mm"
+thanks            "Thanks for your entry."
+submit            "Create entry"
 </form>
 
 
 ===== List of tubes =====
 
 ---- datatable ----
-cols    : ID, %pageid%, Kind, Description, Diameter, Manufacturer
-headers : ID, Details, Kind, Description, Diameter, Manufacturer
-filter  : type~Roehrchen
-filter  : %pageid%!~*template*
-sort    : ^%pageid%
+cols       : ID, %pageid%, Diameter, Thickness, Manufacturer, Material
+headers    : ID, Details, Diameter, Thickness, Manufacturer, Material
+filter     : type~Tubes
+filter     : %pageid%!~*template*
+sort       : ^%pageid%
+dynfilters : 1
 ----
 

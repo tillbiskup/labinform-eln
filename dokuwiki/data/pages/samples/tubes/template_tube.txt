@@ -1,0 +1,15 @@
+====== @@Diameter@@/@@Thickness@@ (@@Material@@) ======
+
+---- dataentry tube ----
+type_hidden           : Tubes
+ID                    : @@No@@
+Material_tubematerial : @@Material@@ 
+Description           : @@Description|@@
+Manufacturer          : @@Manufacturer@@ 
+Diameter              : @@Diameter@@ 
+Thickness             : @@Thickness@@ 
+----
+
+
+===== Comments =====
+

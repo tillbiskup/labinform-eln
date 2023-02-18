@@ -1,6 +1,7 @@
 ====== Quick access ======
 
-[[https://www.labinform.de/|LabInform.de]]
+[[https://www.labinform.de/|LabInform.de]]\\
+[[https://eln.docs.labinform.de/|Documentation]]
 
 [[:|{{fa>home}}]] [[:|Home]]\\
 [[:intro:|{{fa>info-circle}}]] [[:intro:|Intro]]\\
@@ -12,7 +13,7 @@
 
 ===== Areas =====
 
-[[:labbook:|{{fa>book}}]] [[:labbook:|Labbook]]\\
 [[:samples:|{{fa>flask}}]] [[:samples:|Samples]]\\
+[[:labbook:|{{fa>book}}]] [[:labbook:|Labbook]]\\
 [[:calculations:|{{fa>server}}]] [[:calculations:|Calculations]]
 

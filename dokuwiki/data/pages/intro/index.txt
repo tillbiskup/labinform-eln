@@ -7,3 +7,4 @@ All the information we record changes time and again, and we would like to acces
 
 The ELN component of LabInform presented here targets (small) working groups, not just individual researchers. If necessary, access to individual areas can be restricted/adapted accordingly for each user. Of course, due to the generally confidential content, it is still a **closed wiki**: Access is basically only possible after registration (with personalized user account).
 
+For a more detailed documentation of the Labinform ELN for users, administrators, and developers, have a look at [[https://eln.docs.labinform.de/]].

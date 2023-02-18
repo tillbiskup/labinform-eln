@@ -4,7 +4,7 @@
 
 ====== Samples ======
 
-//Overview of batches, samples, syntheses, substrates, cells, tubes.//
+//Inventories of batches, samples, syntheses, substrates, cells, tubes.//
 
 
 ++++ Explanations |
@@ -12,6 +12,9 @@
 {{page>.:help&inline}}
 
 ++++
+
+===== Materials =====
+
 
 <WRAP group centeralign>
 <WRAP third column>
@@ -43,6 +46,9 @@
 </WRAP>
 </WRAP>
 </WRAP>
+
+
+===== Containers and supports =====
 
 
 <WRAP group centeralign>

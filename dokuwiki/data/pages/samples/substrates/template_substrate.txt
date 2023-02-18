@@ -1,0 +1,13 @@
+====== @@Material@@ (@@Description@@) ======
+
+---- dataentry cell ----
+type_hidden         : Substrates
+ID                  : @@No@@
+Material            : @@Material@@ 
+Description         : @@Description@@
+Supply source       : @@Supply source|@@ 
+----
+
+
+===== Comments =====
+

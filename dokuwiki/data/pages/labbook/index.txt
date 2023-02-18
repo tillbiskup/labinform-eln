@@ -13,6 +13,10 @@
 ++++
 
 
+===== Methods =====
+
+The lab notebook is organised according to the methods used for measuring. Clicking on either method brings up an overview table that can be searched and filtered, listing all measurements done with the given method, with links to the individual labbook pages/entries. 
+
 
 <WRAP group centeralign>
 <WRAP third column>
@@ -49,6 +53,11 @@
 
 
 ===== Create new entry =====
+
+<WRAP center round tip 90%>
+You need to have created an entry for a [[..:samples:samples:|sample]] (and a [[..:samples:batches:|batch]] the sample originates from) in order to fill out the form below. The sample number refers to the ID of the respective sample and is used for cross-linking within the LabInform ELN.
+</WRAP>
+
 
 <form>
 Action template template_"@@Experiment@@" :labbook:@@Experiment@@:@DATE(@@Date@@,%%Y)@:@DATE(@@Date@@,%%m)@:@DATE(@@Date@@,%%d)@_@@ID@@

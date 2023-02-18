@@ -1,15 +1,15 @@
 ====== @@Material@@ @@Code@@ (@@Path@@) ======
 
 ---- dataentry cell ----
-type_hidden         : Cells
-ID                  : @@No@@
-Kind                : @@Kind@@ 
-Manufacturer        : @@Manufacturer|@@
-Code                : @@Code@@ 
-Material            : @@Material@@ 
-Path                : @@Path@@ 
-Volume              : @@Volume@@ 
-Bottom              : @@Bottom@@ 
+type_hidden           : Cells
+ID                    : @@No@@
+Kind_celltype         : @@Kind@@ 
+Manufacturer          : @@Manufacturer|@@
+Code                  : @@Code@@ 
+Material_cellmaterial : @@Material@@ 
+Path                  : @@Path@@ 
+Volume                : @@Volume@@ 
+Bottom                : @@Bottom@@ 
 ----
 
 

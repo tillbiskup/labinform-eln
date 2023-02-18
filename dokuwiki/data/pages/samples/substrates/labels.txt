@@ -1,0 +1,3 @@
+  * Material = Material (e.g., PET, glass)
+  * Description = Description (e.g., exact type)
+  * Supply source = Supply source (e.g., manufacturer)
