@@ -9,7 +9,7 @@ Functional_dftfunctional   : @@Functional@@
 Basisset_dftbasisset       : @@Basisset@@
 Environment_dftenvironment : @@Environment@@
 converged_bool             : @@converged@@
-Type                       : @@Type@@ 
+Purpose                    : @@Purpose@@ 
 ----
 
 ===== Comments =====
@@ -29,7 +29,7 @@ general:
   date: @@Date@@
   operator: @NAME@
   id: @@No@@
-  purpose: @@Type@@
+  purpose: @@Purpose@@
 
 calculation:
   functional: @@Functional@@

@@ -1,7 +1,7 @@
 ====== @@No@@ – @@Name@@ ======
 
 ---- dataentry molecule ----
-type_hidden         : Molecule
+type_hidden         : Molecules
 ID                  : @@No@@
 Name                : @@Name@@ 
 Batch_pagebatch     : @@Batch|@@

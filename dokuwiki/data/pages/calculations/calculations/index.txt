@@ -17,7 +17,7 @@ Fieldset          "New entry for calculation"
 hiddenautoinc     "No"
 date              "Date"
 data_aliastextbox "Geometry" _pagegeometry 
-data_aliastextbox "Type" _calctype
+data_aliastextbox "Purpose" _calctype
 data_aliastextbox "Functional" _dftfunctional 
 data_aliastextbox "Basisset" _dftbasisset 
 data_aliastextbox "converged" _bool
@@ -27,7 +27,6 @@ submit            "Create entry"
 </form>
 
 ===== List of calculations =====
-
 
 ---- datatable ----
 cols       : ID, Geometry_pagegeometry, %pageid%, Functional, Basissset, Environment, converged
