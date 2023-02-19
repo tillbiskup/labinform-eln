@@ -1,0 +1,76 @@
+<file "" saXX-01.info>
+cwEPR Info file - v. 0.1.4 (2020-01-21)
+
+GENERAL
+Filename:               SaXX-01
+Date start:             YYYY-MM-DD
+Date end:               YYYY-MM-DD
+Time start:             HH:MM:00
+Time end:               HH:MM:00
+Operator:               
+Label:                  
+Purpose:                
+
+SAMPLE
+Name:                   
+ID:                     
+Description:            
+Solvent:                
+Preparation:            
+Tube:                   
+
+EXPERIMENT
+Type:                   field-sweep
+Runs:                   1
+Variable parameter:     field
+Increment:              x mT
+
+SPECTROMETER
+Model:                  Magnettech MS-5000
+Software:               ESRStudio 1.74.2
+
+MAGNETIC FIELD
+Field probe type:       Hall 
+Field probe model:      builtin 
+Start:                  xxx.x mT
+Stop:                   xxx.x mT
+Step:                   xxxx/xx mT
+Sequence:               up
+Controller:             builtin
+Power supply:           builtin
+
+BRIDGE
+Model:                  builtin
+Controller:             builtin
+Attenuation:            xx dB
+Power:                  0.xxxx mW
+Detection:              mixer
+Frequency counter:      builtin
+MW frequency:           9.xxxxx GHz
+Q value:                xxxx
+
+SIGNAL CHANNEL
+Model:                  builtin
+Modulation amplifier:   builtin
+Accumulations:          x
+Modulation frequency:   100 kHz
+Modulation amplitude:   x.y mT
+Receiver gain:          0 
+Offset:                 0.0
+Conversion time:        0.00 
+Time constant:          0.00 
+Phase:                  0.00 deg
+
+PROBEHEAD
+Type:                   rectangular TE102
+Model:                  builtin
+Coupling:               critical
+
+TEMPERATURE
+Temperature:            XXX K
+Controller:             N/A
+Cryostat:               N/A
+Cryogen:                N/A
+
+COMMENT
+</file>

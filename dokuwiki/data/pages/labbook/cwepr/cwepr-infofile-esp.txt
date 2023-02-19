@@ -1,0 +1,76 @@
+<file "" saXX-01.info>
+cwEPR Info file - v. 0.1.4 (2020-01-21)
+
+GENERAL
+Filename:               SaXX-01
+Date start:             YYYY-MM-DD
+Date end:               YYYY-MM-DD
+Time start:             HH:MM:00
+Time end:               HH:MM:00
+Operator:               
+Label:                  
+Purpose:                
+
+SAMPLE
+Name:                   
+ID:                     
+Description:            
+Solvent:                
+Preparation:            
+Tube:                   
+
+EXPERIMENT
+Type:                   field-sweep
+Runs:                   1
+Variable parameter:     field
+Increment:              x mT
+
+SPECTROMETER
+Model:                  Bruker ESP380
+Software:               ESP380E
+
+MAGNETIC FIELD
+Field probe type:       Hall 
+Field probe model:      xxx 
+Start:                  xxx.x mT
+Stop:                   xxx.x mT
+Step:                   xxxx/xx mT
+Sequence:               up
+Controller:             Bruker 032M
+Power supply:           Bruker ER 083 CS
+
+BRIDGE
+Model:                  Bruker ER 046 MRT
+Controller:             Bruker 
+Attenuation:            xx dB
+Power:                  0.xxxx mW
+Detection:              diode
+Frequency counter:      Bruker
+MW frequency:           9.xxxxx GHz
+Q value:                xxxx
+
+SIGNAL CHANNEL
+Model:                  Bruker ER 023M
+Modulation amplifier:   Bruker
+Accumulations:          x
+Modulation frequency:   100 kHz
+Modulation amplitude:   x.y mT
+Receiver gain:          xx dB
+Offset:                 0.0
+Conversion time:        xx.xx ms
+Time constant:          xx.xx ms
+Phase:                  0 deg
+
+PROBEHEAD
+Type:                   
+Model:                  
+Coupling:               critical
+
+TEMPERATURE
+Temperature:            XXX K
+Controller:             N/A
+Cryostat:               N/A
+Cryogen:                N/A
+
+COMMENT
+</file>

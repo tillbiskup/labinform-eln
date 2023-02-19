@@ -1,0 +1,5 @@
+  * Infofiles
+  * [[:labbook:cwepr:cwepr-infofile-emx|cwepr Bruker EMX]]
+  * [[:labbook:cwepr:cwepr-infofile-esp|cwepr Bruker ESP]]
+  * [[:labbook:cwepr:cwepr-infofile-e580|cwepr Bruker E580]]
+  * [[:labbook:cwepr:cwepr-infofile-magnettech|cwepr Magnettech]]
