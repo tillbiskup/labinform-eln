@@ -1,0 +1,127 @@
+====== @@Date@@ ======
+
+---- dataentry labbook ----
+type_hidden            : Labbook
+date_hidden            : @@Date@@
+experiment_hidden      : @@Experiment@@
+sample                 : @@Sample|@@
+sampleno_sa            : @@Samplenumber|@@
+buffer                 : -
+temperature            : @@Temperature@@
+spectrometer           : @@Spectrometer@@
+probehead_eprprobehead : @@Probehead@@
+purpose                : @@Purpose@@
+----
+
+
+
+
+===== Protocol =====
+
+  ; xx:xx 
+  : ...
+  ; xx:xx 
+  : ...
+
+
+===== Comments =====
+
+...
+
+
+===== Analysis =====
+
+...
+ 
+<figure>
+<caption>**... .** ...</caption>
+</figure>
+
+
+===== Further plans =====
+
+...
+
+
+===== Documentation =====
+
+<file "" sa@@Samplenumber|@@-01.info>
+cwEPR Info file - v. 0.1.4 (2020-01-21)
+
+GENERAL
+Filename:               Sa@@Samplenumber|@@-01
+Date start:             @@Date@@
+Date end:               @@Date@@
+Time start:             %H:%M:00
+Time end:               %H:xx:00
+Operator:               @NAME@
+Label:                  
+Purpose:                @@Purpose@@
+
+SAMPLE
+Name:                   @@Sample|@@
+ID:                     @@Samplenumber|@@
+Description:            
+Solvent:                
+Preparation:            
+Tube:                   
+
+EXPERIMENT
+Type:                   field-sweep
+Runs:                   1
+Variable parameter:     field
+Increment:              x mT
+
+SPECTROMETER
+Model:                  @@Spectrometer@@
+Software:               Xenon 1.3b.5
+
+MAGNETIC FIELD
+Field probe type:       Hall 
+Field probe model:      xxx 
+Start:                  xxx.x mT
+Stop:                   xxx.x mT
+Step:                   xxxx/xx mT
+Sequence:               up
+Controller:             Bruker EMX Field Controller
+Power supply:           Bruker ER 081 (90/30)
+
+BRIDGE
+Model:                  Bruker EMX PremiumX
+Controller:             Bruker EMX
+Attenuation:            xx dB
+Power:                  0.xxxx mW
+Detection:              diode
+Frequency counter:      Bruker
+MW frequency:           9.xxxxx GHz
+Q value:                xxxx
+
+SIGNAL CHANNEL
+Model:                  Bruker EMX Signal Channel
+Modulation amplifier:   Bruker EMX Modulation Amplifier
+Accumulations:          x
+Modulation frequency:   100 kHz
+Modulation amplitude:   x.y mT
+Receiver gain:          xx dB
+Offset:                 0.0
+Conversion time:        xx.xx ms
+Time constant:          xx.xx ms
+Phase:                  0 deg
+
+DIGITAL FILTER
+Mode:                   Manual
+Number of Points:       0
+
+PROBEHEAD
+Type:                   
+Model:                  @@Probehead@@
+Coupling:               critical
+
+TEMPERATURE
+Temperature:            @@Temperature@@ K
+Controller:             N/A
+Cryostat:               N/A
+Cryogen:                N/A
+
+COMMENT
+</file>

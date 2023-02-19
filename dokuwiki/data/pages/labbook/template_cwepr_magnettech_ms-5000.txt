@@ -1,0 +1,123 @@
+====== @@Date@@ ======
+
+---- dataentry labbook ----
+type_hidden            : Labbook
+date_hidden            : @@Date@@
+experiment_hidden      : @@Experiment@@
+sample                 : @@Sample|@@
+sampleno_sa            : @@Samplenumber|@@
+buffer                 : -
+temperature            : @@Temperature@@
+spectrometer           : @@Spectrometer@@
+probehead_eprprobehead : @@Probehead@@
+purpose                : @@Purpose@@
+----
+
+
+
+
+===== Protocol =====
+
+  ; xx:xx 
+  : ...
+  ; xx:xx 
+  : ...
+
+
+===== Comments =====
+
+...
+
+
+===== Analysis =====
+
+...
+ 
+<figure>
+<caption>**... .** ...</caption>
+</figure>
+
+
+===== Further plans =====
+
+...
+
+
+===== Documentation =====
+
+<file "" sa@@Samplenumber|@@-01.info>
+cwEPR Info file - v. 0.1.4 (2020-01-21)
+
+GENERAL
+Filename:               Sa@@Samplenumber|@@-01
+Date start:             @@Date@@
+Date end:               @@Date@@
+Time start:             %H:%M:00
+Time end:               %H:xx:00
+Operator:               @NAME@
+Label:                  
+Purpose:                @@Purpose@@
+
+SAMPLE
+Name:                   @@Sample|@@
+ID:                     @@Samplenumber|@@
+Description:            
+Solvent:                
+Preparation:            
+Tube:                   
+
+EXPERIMENT
+Type:                   field-sweep
+Runs:                   1
+Variable parameter:     field
+Increment:              x mT
+
+SPECTROMETER
+Model:                  @@Spectrometer@@
+Software:               ESRStudio 1.74.2
+
+MAGNETIC FIELD
+Field probe type:       Hall 
+Field probe model:      builtin 
+Start:                  xxx.x mT
+Stop:                   xxx.x mT
+Step:                   xxxx/xx mT
+Sequence:               up
+Controller:             builtin
+Power supply:           builtin
+
+BRIDGE
+Model:                  builtin
+Controller:             builtin
+Attenuation:            xx dB
+Power:                  0.xxxx mW
+Detection:              mixer
+Frequency counter:      builtin
+MW frequency:           9.xxxxx GHz
+Q value:                xxxx
+
+SIGNAL CHANNEL
+Model:                  builtin
+Modulation amplifier:   builtin
+Accumulations:          x
+Modulation frequency:   100 kHz
+Modulation amplitude:   x.y mT
+Receiver gain:          0 
+Offset:                 0.0
+Conversion time:        0.00 
+Time constant:          0.00 
+Phase:                  0.00 deg
+
+PROBEHEAD
+Type:                   rectangular TE102
+Model:                  builtin
+Coupling:               critical
+
+TEMPERATURE
+Temperature:            @@Temperature@@ K
+Controller:             N/A
+Cryostat:               N/A
+Cryogen:                N/A
+
+COMMENT
+</file>
