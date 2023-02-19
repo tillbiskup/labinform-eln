@@ -14,6 +14,7 @@ The concepts described below are not unique to the LabInform ELN, but in their e
   * Measurements are grouped by method
   * Labbook entries contain crucial metadata
   * Labbook entries are cross-referenced from the sample pages and *vice versa*
+  * Recurring blocks of a labbook entry can be inserted using templates
   * Most adjustments can be made from *within* the Web UI
 
 
@@ -75,6 +76,12 @@ Lab notebooks are an established tool for scientific recordkeeping, and acquirin
 Furthermore, labbook entries for individual measurements are cross-referenced from the sample pages and *vice versa*. Thus, the LabInform ELN provides different ways to access the relevant information. You can either start with a particular sample and see on its page in the inventory what measurements have been performed, as this information is automatically available in an overview table cross-linked to the individual labbook entries. Similarly, you can start with a method, have a look at the measurements that have been performed, look at an individual measurement and from there continue to the sample.
 
 The cross-references just mentioned are added automatically, thanks to using web forms for creating entries for samples and measurements. Additionally, the LabInform ELN simplifies manual cross-references by providing special markup for linking to samples, batches, and alike, once again making use of functionality provided by the underlying `DokuWiki wiki engine <https://www.dokuwiki.org/>`_.
+
+
+Recurring blocks of a labbook entry via templates
+=================================================
+
+Often, certain recurring elements need to be added to a labbook page, be it a step in a synthesis or another metadata file containing all metadata recorded *during* data acquisition. This is possible from within the DokuWiki editor using a template manager. The templates as such can be fully controlled by the individual users and previewed within the template manager.
 
 
 Adjustments from within the Web UI
