@@ -54,6 +54,11 @@ For a complete list of plugins that should be installed and a short description 
 
                                 useful, *e.g.*, for area-specific additional navigation in the sidebar
     upgrade                     Upgrade the DokuWiki from within the admin interface
+    snippets                    Insert templates into the current page at the cursor position
+
+                                helpful for more consistent documentation, reusing well-crafted
+
+                                building blocks
     (bibtex)                    not available via extension manager, needs rewrite and renaming
     =========================== =================================================================================
 

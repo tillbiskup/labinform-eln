@@ -3,5 +3,5 @@
   * Samplenumber = Sample ID
   * Temperature
   * Experiment
-  * Excitation
+  * Excitation = Excitation wavelength (nm)
   * Probehead

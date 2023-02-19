@@ -1,15 +1,15 @@
 ====== @@Date@@ ======
 
 ---- dataentry labbook ----
-type_hidden           : Labbook
-date_hidden           : @@Date@@
-experiment_hidden     : @@Experiment@@
-sample                : @@Sample|@@
-sampleno_sa           : @@Samplenumber|@@
-buffer                : -
-temperature           : @@Temperature@@
-resonator_probehead   : @@Probehead@@
-purpose               : -
+type_hidden            : Labbook
+date_hidden            : @@Date@@
+experiment_hidden      : @@Experiment@@
+sample                 : @@Sample|@@
+sampleno_sa            : @@Samplenumber|@@
+buffer                 : -
+temperature            : @@Temperature@@
+probehead_eprprobehead : @@Probehead@@
+purpose                : -
 ----
 
 
@@ -44,9 +44,9 @@ purpose               : -
 
 ===== Documentation =====
 
-<file "" data01.info>
+<file "" sa@@Samplenumber|@@-01.info>
 </file>
 
-<file "" data02.info>
+<file "" sa@@Samplenumber|@@-02.info>
 </file>
 

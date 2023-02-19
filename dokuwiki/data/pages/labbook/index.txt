@@ -74,10 +74,12 @@ data_aliastextbox "Experiment" _experiment
 
 Fieldset "TREPR experiment parameters" "Experiment" "TREPR"
 textbox           "Excitation"
-data_aliastextbox "Probehead" _probehead
+data_aliastextbox "Spectrometer" _eprspectrometer ="Bruker ESP"
+data_aliastextbox "Probehead" _eprprobehead ="Bruker ER4118X-MD5"
 
 Fieldset "cwEPR experiment parameters" "Experiment" "cwEPR"
-data_aliastextbox "Probehead" _probehead
+data_aliastextbox "Spectrometer" _eprspectrometer
+data_aliastextbox "Probehead" _eprprobehead ="Bruker 4119HS-W1"
 
 Fieldset "Submit form"
 thanks            "Thanks for the entry."
