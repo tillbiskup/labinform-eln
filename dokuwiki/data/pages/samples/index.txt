@@ -42,7 +42,7 @@
 
 ===== Syntheses =====
 
-[[.:syntheses:|own synthesis of a substance]]
+[[.:syntheses:|Own synthesis of a substance]]
 </WRAP>
 </WRAP>
 </WRAP>
@@ -77,7 +77,7 @@
 [[.:substrates:|{{fa>bars?48}}]] 
 ===== Substrates =====
 
-[[.:substrates:|optional support material for samples]]
+[[.:substrates:|Optional support material for samples]]
 </WRAP>
 </WRAP>
 </WRAP>

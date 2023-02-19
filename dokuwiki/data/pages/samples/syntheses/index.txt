@@ -1,0 +1,24 @@
+{{fa>industry?48&align=right}}
+ ====== Syntheses ======
+
+//Own synthesis of a substance//
+
+
+<WRAP center round important 100%>
+Syntheses need to be designed and decided upon how to include them here in the LabInform ELN. Some key concepts may include:
+
+  * One synthesis will be described on one page
+  * Syntheses can be based on batches
+  * Syntheses result in a batch of material (that needs to be added manually to the list of batches)
+  * Syntheses will most probably use templates via the snippet plugin for recurring building blocks of the description
+  * We need some way to associate (external) analytical measurements with a synthesis
+</WRAP>
+
+
+
+===== Create new synthesis entry =====
+
+
+
+===== List of syntheses =====
+
