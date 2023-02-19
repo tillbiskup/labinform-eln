@@ -1,0 +1,6 @@
+===== Subareas =====
+
+[[:calculations:molecules:|{{fa>first-order}}]] [[:calculations:molecules:|Molecules]]\\
+[[:calculations:geometries:|{{fa>diamond}}]] [[:calculations:geometries:|Geometries]]\\
+[[:calculations:calculations:|{{fa>server}}]] [[:calculations:calculations:|Calculations]]
+
