@@ -9,8 +9,8 @@ sampleno_sa            : @@Samplenumber|@@
 buffer                 : -
 temperature            : @@Temperature@@
 excitation             : @@Excitation@@
-spectrometer           : @@Spectrometer@@
-probehead_eprprobehead : @@Probehead@@
+spectrometer           : @@treprSpectrometer@@
+probehead_eprprobehead : @@treprProbehead@@
 purpose                : @@Purpose@@
 ----
 

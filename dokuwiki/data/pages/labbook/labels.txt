@@ -4,5 +4,8 @@
   * Temperature = Temperature (in K)
   * Purpose
   * Experiment
+  * cweprSpectrometer = Spectrometer
+  * treprSpectrometer = Spectrometer
   * Excitation = Excitation wavelength (nm)
-  * Probehead
+  * cweprProbehead = Probehead
+  * treprProbehead = Probehead

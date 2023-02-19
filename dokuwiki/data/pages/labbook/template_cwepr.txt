@@ -8,8 +8,8 @@ sample                 : @@Sample|@@
 sampleno_sa            : @@Samplenumber|@@
 buffer                 : -
 temperature            : @@Temperature@@
-spectrometer           : @@Spectrometer@@
-probehead_eprprobehead : @@Probehead@@
+spectrometer           : @@cwepr-Spectrometer@@
+probehead_eprprobehead : @@cwepr-Probehead@@
 purpose                : -
 ----
 

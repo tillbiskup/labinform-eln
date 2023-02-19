@@ -1,0 +1,147 @@
+====== @@Date@@ ======
+
+---- dataentry labbook ----
+type_hidden            : Labbook
+date_hidden            : @@Date@@
+experiment_hidden      : @@Experiment@@
+sample                 : @@Sample|@@
+sampleno_sa            : @@Samplenumber|@@
+buffer                 : -
+temperature            : @@Temperature@@
+excitation             : @@Excitation@@
+spectrometer           : @@treprSpectrometer@@
+probehead_eprprobehead : @@treprProbehead@@
+purpose                : @@Purpose@@
+----
+
+
+
+
+===== Protocol =====
+
+  ; xx:xx 
+  : ...
+  ; xx:xx 
+  : ...
+
+
+===== Comments =====
+
+...
+
+
+===== Analysis =====
+
+...
+ 
+<figure>
+<caption>**... .** ...</caption>
+</figure>
+
+
+===== Further plans =====
+
+...
+
+
+===== Documentation =====
+
+<file "" sa@@Samplenumber|@@-01.info>
+trEPR Info file - v. 0.1.6 (2016-01-18)
+
+GENERAL
+Filename:
+Date start:             @@Date@@
+Date end:               @@Date@@
+Time start:             %H:%M:00
+Time end:               HH:MM:00
+Operator:               @NAME@
+Label:
+Purpose:                @@Purpose@@
+
+SAMPLE
+Name:                   @@Sample|@@
+ID:                     @@Samplenumber|@@
+Description:
+Solvent:
+Preparation:
+Tube:
+
+EXPERIMENT
+Runs:                   1
+Shot Repetition Rate:   10 Hz
+
+SPECTROMETER
+Model:                  ESP380E
+Software:               Transient, Vers. 0.6
+
+MAGNETIC FIELD
+Field probe type:       Hall
+Field probe model:      xxx
+Start:                  xxx mT
+Stop:                   xxx mT
+Step:                   x.x mT
+Sequence:               inward
+Controller:             Bruker 032 M
+Power supply:           Bruker 083 CS
+
+BACKGROUND
+Field:                  xxx.x mT
+Occurrence:             10
+Polarisation:           absorptive
+Intensity:              xx.x mV
+
+BRIDGE
+Model:                  Bruker ER 046 MRT
+Controller:             Bruker ER 048R (W17159/605)
+Attenuation:            xx dB
+Power:                  x.xx mW
+Detection:              mixer
+Frequency counter:      HP 5352B
+MW frequency:           9.xxxxx GHz
+
+VIDEO AMPLIFIER
+Bandwidth:              25 MHz
+Amplification:          xx dB
+
+RECORDER
+Model:                  LeCroy 9354A
+Averages:               xxx
+Time base:              2 ns
+Bandwidth:              500 MHz
+Pretrigger:             1.001 us
+Coupling:               DC
+Impedance:              50 Ohm
+Sensitivity:            xx mV
+
+TRANSIENT
+Points:                 5000
+Length:                 10 us
+Trigger Position:       500
+
+PROBEHEAD
+Type:
+Model:                  @@treprProbehead@@
+Coupling:               critical
+
+PUMP
+Type:                   Laser
+Model:                  GCR 190-10
+Wavelength:             @@Excitation@@ nm
+Power:                  x mJ
+Repetition rate:        10 Hz
+Tunable type:           OPO
+Tunable model:          OPTA BBO VIS/IR
+Tunable dye:
+Tunable position:       xxxx
+Filter:
+
+TEMPERATURE
+Temperature:            @@Temperature@@ K
+Controller:             Oxford ITC 503
+Cryostat:               Oxford ESR935
+Cryogen:                N2
+
+COMMENT
+</file>
+

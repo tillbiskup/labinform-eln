@@ -8,8 +8,8 @@ sample                 : @@Sample|@@
 sampleno_sa            : @@Samplenumber|@@
 buffer                 : -
 temperature            : @@Temperature@@
-spectrometer           : @@Spectrometer@@
-probehead_eprprobehead : @@Probehead@@
+spectrometer           : @@cweprSpectrometer@@
+probehead_eprprobehead : @@cweprProbehead@@
 purpose                : @@Purpose@@
 ----
 
@@ -73,7 +73,7 @@ Variable parameter:     field
 Increment:              x mT
 
 SPECTROMETER
-Model:                  @@Spectrometer@@
+Model:                  @@cweprSpectrometer@@
 Software:               Xenon 1.3b.5
 
 MAGNETIC FIELD
@@ -114,7 +114,7 @@ Number of Points:       0
 
 PROBEHEAD
 Type:                   
-Model:                  @@Probehead@@
+Model:                  @@cweprProbehead@@
 Coupling:               critical
 
 TEMPERATURE

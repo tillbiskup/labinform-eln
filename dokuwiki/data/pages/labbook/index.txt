@@ -60,7 +60,7 @@ You need to have created an entry for a [[..:samples:samples:|sample]] (and a [[
 
 
 <form>
-Action template template_"@@Experiment@@_@@Spectrometer|@@" :labbook:@@Experiment@@:@DATE(@@Date@@,%%Y)@:@DATE(@@Date@@,%%m)@:@DATE(@@Date@@,%%d)@_@@ID@@
+Action template template_"@@Experiment@@_@@cweprSpectrometer|@@_@@treprSpectrometer|@@" :labbook:@@Experiment@@:@DATE(@@Date@@,%%Y)@:@DATE(@@Date@@,%%m)@:@DATE(@@Date@@,%%d)@_@@ID@@
 Thanks "Thanks for submitting your valuable data."
 labels labels
 
@@ -75,12 +75,12 @@ textbox           "Purpose"
 
 Fieldset "TREPR experiment parameters" "Experiment" "TREPR"
 textbox           "Excitation"
-data_aliastextbox "Spectrometer" _eprspectrometer ="Bruker ESP"
-data_aliastextbox "Probehead" _eprprobehead ="Bruker ER4118X-MD5"
+data_aliastextbox "treprSpectrometer" _eprspectrometer ="Bruker ESP"
+data_aliastextbox "treprProbehead" _eprprobehead ="Bruker ER4118X-MD5"
 
 Fieldset "cwEPR experiment parameters" "Experiment" "cwEPR"
-data_aliastextbox "Spectrometer" _eprspectrometer ="Bruker EMX"
-data_aliastextbox "Probehead" _eprprobehead ="Bruker 4119HS-W1"
+data_aliastextbox "cweprSpectrometer" _eprspectrometer ="Bruker EMX"
+data_aliastextbox "cweprProbehead" _eprprobehead ="Bruker 4119HS-W1"
 
 Fieldset "Submit form"
 thanks            "Thanks for the entry."

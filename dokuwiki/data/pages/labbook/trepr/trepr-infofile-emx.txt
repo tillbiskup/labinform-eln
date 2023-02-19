@@ -1,0 +1,88 @@
+<file "" saXX-01.info>
+trEPR Info file - v. 0.1.6 (2016-01-18)
+
+GENERAL
+Filename:
+Date start:             YYYY-MM-DD
+Date end:               YYYY-MM-DD
+Time start:             HH:MM:00
+Time end:               HH:MM:00
+Operator:               
+Label:
+Purpose:                
+
+SAMPLE
+Name:                   
+ID:                     
+Description:
+Solvent:
+Preparation:
+Tube:
+
+EXPERIMENT
+Runs:                   1
+Shot Repetition Rate:   10 Hz
+
+SPECTROMETER
+Model:                  Bruker EMX
+Software:               ???
+
+MAGNETIC FIELD
+Field probe type:       Hall
+Field probe model:      xxx
+Start:                  xxx mT
+Stop:                   xxx mT
+Step:                   x.x mT
+Sequence:               up
+Controller:             Bruker EMX
+Power supply:           Bruker 083
+
+BRIDGE
+Model:                  Bruker EMX premiumX
+Controller:             Bruker EMX
+Attenuation:            xx dB
+Power:                  x.xx mW
+Detection:              mixer
+Frequency counter:      HP 5352B
+MW frequency:           9.xxxxx GHz
+
+RECORDER
+Model:                  Teledyne LeCroy HDO9204
+Averages:               xxx
+Time base:              2 ns
+Bandwidth:              500 MHz
+Pretrigger:             1.001 us
+Coupling:               DC
+Impedance:              50 Ohm
+Sensitivity:            xx mV
+
+TRANSIENT
+Points:                 5000
+Length:                 10 us
+Trigger Position:       500
+
+PROBEHEAD
+Type:
+Model:                  
+Coupling:               critical
+
+PUMP
+Type:                   Laser
+Model:                  Spectra-Physics Quanta-Ray INDI PS 51/52
+Wavelength:             xxx nm
+Power:                  x mJ
+Repetition rate:        10 Hz
+Tunable type:           OPO
+Tunable model:          GWU primoScan/BB/120-INDI
+Tunable dye:
+Tunable position:       N/A
+Filter:
+
+TEMPERATURE
+Temperature:            xxx K
+Controller:             Lake Shore 350
+Cryostat:               Cryogenic CF VTC
+Cryogen:                He
+
+COMMENT
+</file>
