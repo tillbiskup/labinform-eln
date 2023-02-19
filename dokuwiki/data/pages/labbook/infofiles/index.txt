@@ -7,6 +7,48 @@ For each experiment performed, a file with the important parameters for the meas
 
 ===== UV/vis =====
 
+<file "" uvvis.info>
+uvvis Info file - v. 0.1.1
+
+GENERAL
+Date start:    2018-05-13
+Time start:    11:05:00
+Date end:      2018-05-13
+Time end:      11:06:00
+Operator:      John Doe
+Purpose:       temperature dependence
+
+SAMPLE
+Name:          PNDIT2
+ID:            42
+Solvent:       toluene
+Concentration: 0.4 mg/ml
+Preparation:   1:25 diluted
+
+CELL
+Manufacturer:  Hellma
+Type:          QS 1.00
+Pathlength:    1 mm
+
+TEMPERATURE
+Temperature:   290 K
+Controller:    Oxford MercuryITC
+Cryostat:      Oxford Optistat DN2
+Cryogen:       LN2
+
+EXPERIMENT
+Type:          spectrum
+Mode:          absorption
+
+SPECTROMETER
+Manufacturer:  Shimadzu
+Model:         UV-1601PC
+Software:      UV Probe, Version 2.43
+
+COMMENT
+To be or not to be...
+</file>
+
 <file yaml uvvis.yaml>
 ---
 format:

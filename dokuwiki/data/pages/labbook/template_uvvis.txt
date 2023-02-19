@@ -43,9 +43,44 @@ purpose               : @@Purpose@@
 
 ===== Documentation =====
 
-<file "" data01.info>
-</file>
+<file "" sa@@Samplenumber|@@-01.info>
+uvvis Info file - v. 0.1.1
 
-<file "" data02.info>
+GENERAL
+Date start:    @@Date@@
+Time start:    %H:%M:00
+Date end:      @@Date@@
+Time end:      %H:xx:00
+Operator:      @NAME@
+Purpose:       @@Purpose@@
+
+SAMPLE
+Name:          @@Sample|@@
+ID:            @@Samplenumber|@@
+Solvent:       
+Concentration: 
+Preparation:   
+
+CELL
+Manufacturer:  Hellma
+Type:          QS 1.00
+Pathlength:    1 mm
+
+TEMPERATURE
+Temperature:   @@Temperature@@ K
+Controller:    Oxford MercuryITC
+Cryostat:      Oxford Optistat DN2
+Cryogen:       LN2
+
+EXPERIMENT
+Type:          spectrum
+Mode:          absorption
+
+SPECTROMETER
+Manufacturer:  Shimadzu
+Model:         UV-1601PC
+Software:      UV Probe, Version 2.43
+
+COMMENT
 </file>
 
