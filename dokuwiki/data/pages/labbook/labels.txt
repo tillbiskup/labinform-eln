@@ -1,7 +1,8 @@
   * Date
   * Sample = Sample name
   * Samplenumber = Sample ID
-  * Temperature
+  * Temperature = Temperature (in K)
+  * Purpose
   * Experiment
   * Excitation = Excitation wavelength (nm)
   * Probehead

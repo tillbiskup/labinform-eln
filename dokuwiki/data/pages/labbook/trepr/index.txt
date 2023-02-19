@@ -6,7 +6,7 @@
 
 ---- datatable ----
 cols       : %pageid%, sample, sampleno_sa, temperature, excitation, purpose
-headers    : Details, Sample, No., Temp., λ, Purpose
+headers    : Details, Sample, No., Temp. / K, λ / nm, Purpose
 filter     : type~Labbook
 filter     : %pageid%!~*template*
 filter     : experiment=TREPR

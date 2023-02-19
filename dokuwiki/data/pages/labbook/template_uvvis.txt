@@ -8,7 +8,7 @@ sample                : @@Sample|@@
 sampleno_sa           : @@Samplenumber|@@
 buffer                : -
 temperature           : @@Temperature@@
-purpose               : -
+purpose               : @@Purpose@@
 ----
 
 

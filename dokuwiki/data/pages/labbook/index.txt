@@ -60,7 +60,7 @@ You need to have created an entry for a [[..:samples:samples:|sample]] (and a [[
 
 
 <form>
-Action template template_"@@Experiment@@" :labbook:@@Experiment@@:@DATE(@@Date@@,%%Y)@:@DATE(@@Date@@,%%m)@:@DATE(@@Date@@,%%d)@_@@ID@@
+Action template template_"@@Experiment@@_@@Spectrometer|@@" :labbook:@@Experiment@@:@DATE(@@Date@@,%%Y)@:@DATE(@@Date@@,%%m)@:@DATE(@@Date@@,%%d)@_@@ID@@
 Thanks "Thanks for submitting your valuable data."
 labels labels
 
@@ -71,6 +71,7 @@ textbox           "Sample" !
 number            "Samplenumber" !
 textbox           "Temperature"
 data_aliastextbox "Experiment" _experiment
+textbox           "Purpose"
 
 Fieldset "TREPR experiment parameters" "Experiment" "TREPR"
 textbox           "Excitation"

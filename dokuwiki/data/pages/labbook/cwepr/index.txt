@@ -6,7 +6,7 @@
 
 ---- datatable ----
 cols       : %pageid%, sample, sampleno_sa, temperature, purpose
-headers    : Details, Sample, No., Temp., Purpose
+headers    : Details, Sample, No., Temp. / K, Purpose
 filter     : type~Labbook
 filter     : %pageid%!~*template*
 filter     : experiment=cwEPR
