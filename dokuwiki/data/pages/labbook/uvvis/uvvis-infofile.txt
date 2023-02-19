@@ -1,0 +1,40 @@
+<file "" saXX-01.info>
+uvvis Info file - v. 0.1.1
+
+GENERAL
+Date start:    YYYY-MM-DD
+Time start:    HH:MM:00
+Date end:      YYYY-MM-DD
+Time end:      HH:MM:00
+Operator:
+Purpose:
+
+SAMPLE
+Name:
+ID:
+Solvent:
+Concentration:
+Preparation:
+
+CELL
+Manufacturer:  Hellma
+Type:          QS 1.00
+Pathlength:    1 mm
+
+TEMPERATURE
+Temperature:   xxx K
+Controller:    Oxford MercuryITC
+Cryostat:      Oxford Optistat DN2
+Cryogen:       LN2
+
+EXPERIMENT
+Type:          spectrum
+Mode:          absorption
+
+SPECTROMETER
+Manufacturer:  Shimadzu
+Model:         UV-1601PC
+Software:      UV Probe, Version 2.43
+
+COMMENT
+</file>

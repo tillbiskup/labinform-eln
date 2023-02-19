@@ -1,7 +1,12 @@
 ====== Templates for info files ======
 
-For each experiment performed, a file with the important parameters for the measurement is usually stored, which is saved together with the raw data and read in by the processing routines.
+Data without corresponding metadata are (mostly) useless, and usually, not all relevant metadata are recorded by the spectrometer control software. At least, the purpose is usually not recorded, but rather often, other crucial parameters are missing as well. Therefore, tools allowing to record (complete) metadata during data acquisition are necessary. One such tool is the Infofile. For details, see [[https://github.com/tillbiskup/infofile]].
 
+For each experiment performed, such an Infofile with the important parameters for the measurement is created and is saved together with the raw data and read in by the processing routines.
+
+<WRAP center round tip 100%>
+All the different infofiles are available from within the LabInform ELN as snippets/templates and can be inserted in any wiki page. In the edit mode, use the respective button (at the very right of the icons list) to open up the template manager and select the correct infofile for your purpose. Note that the template manager allows you to preview the template as well.
+</WRAP>
 
 
 

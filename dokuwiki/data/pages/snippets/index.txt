@@ -5,3 +5,4 @@
   * [[:labbook:cwepr:cwepr-infofile-magnettech|cwepr Magnettech]]
   * [[:labbook:trepr:trepr-infofile-esp|trepr Bruker ESP]]
   * [[:labbook:trepr:trepr-infofile-emx|trepr Bruker EMX]]
+  * [[:labbook:uvvis:uvvis-infofile|UVVis]]
