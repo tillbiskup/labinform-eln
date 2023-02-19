@@ -8,6 +8,7 @@ sample                 : @@Sample|@@
 sampleno_sa            : @@Samplenumber|@@
 buffer                 : -
 temperature            : @@Temperature@@
+spectrometer           : @@Spectrometer@@
 probehead_eprprobehead : @@Probehead@@
 purpose                : -
 ----

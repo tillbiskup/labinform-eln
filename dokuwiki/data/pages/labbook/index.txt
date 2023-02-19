@@ -78,7 +78,7 @@ data_aliastextbox "Spectrometer" _eprspectrometer ="Bruker ESP"
 data_aliastextbox "Probehead" _eprprobehead ="Bruker ER4118X-MD5"
 
 Fieldset "cwEPR experiment parameters" "Experiment" "cwEPR"
-data_aliastextbox "Spectrometer" _eprspectrometer
+data_aliastextbox "Spectrometer" _eprspectrometer ="Bruker EMX"
 data_aliastextbox "Probehead" _eprprobehead ="Bruker 4119HS-W1"
 
 Fieldset "Submit form"
