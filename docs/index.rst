@@ -63,14 +63,14 @@ Non-Features
 
 A few things the LabInform ELN does not provide/implement:
 
-* Data store, aka repository
+* Data store, aka repository\*
 * Research data catalogue
-* Management of measurement setups in the lab
-* General project management, including proposals and publications
+* Management of measurement setups in the lab\*
+* General project management, including proposals and publications\*
 * General inventory for consumables
-* Analysis workflow for data
+* Analysis workflow for data\*\*
 
-The main reason lies in the "separation of concerns" (E. Dijkstra), focussing on one task at a time using one dedicated tool. Some of the "non-features" described above are, however, part of the `wider LabInform LIMS <https://www.labinform.de/>`_ the LabInform ELN is only one part of. If you are interested in a reproducible analysis workflow of spectroscopic data, have a look at the `ASpecD framework <https://docs.aspecd.de/>`_ and related packages.
+The main reason lies in the "separation of concerns" (E. Dijkstra), focussing on one task at a time using one dedicated tool. Some of the "non-features" described above (and marked with an asterisk: \*) are, however, part of the `wider LabInform LIMS <https://www.labinform.de/>`_ the LabInform ELN is only one part of. If you are interested in a reproducible analysis workflow of spectroscopic data (\*\*), have a look at the `ASpecD framework <https://docs.aspecd.de/>`_ and related packages.
 
 
 .. _sec-how_to_cite:
@@ -138,6 +138,9 @@ There is a number of related packages users of the LabInform ELN may well be int
    user/batches
    user/samples
    user/measurements
+   user/molecules
+   user/geometries
+   user/calculations
 
 
 .. toctree::

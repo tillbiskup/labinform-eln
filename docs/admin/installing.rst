@@ -114,6 +114,12 @@ There is a series of general configuration settings that should be changed from 
     |              +-------------------+-------------------+
     |              | showeditbtn       | uncheck           |
     +--------------+-------------------+-------------------+
+    | Snippets     | snips_updatable   | uncheck           |
+    |              +-------------------+-------------------+
+    |              | old_revisions     | uncheck           |
+    |              +-------------------+-------------------+
+    |              | userreplace       | uncheck           |
+    +--------------+-------------------+-------------------+
 
 Of course, you can deviate from some of the settings given here without impairing functionality, as some are merely a matter of personal taste. Nevertheless, others are necessary for the DokuWiki to work as intended.
 

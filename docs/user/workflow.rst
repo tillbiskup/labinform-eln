@@ -77,3 +77,15 @@ Similarly to the workflow described above for documenting measurements, the work
     General workflow for documenting quantum-chemical calculations: Calculations are performed on geometries that belong to a molecule. There can (and usually will) be more than one geometry for a molecule. The results of calculations can be new geometries, parameters, or both.
 
 
+Adding a molecule and a geometry to the inventory
+-------------------------------------------------
+
+
+:Molecule:
+    Chemical structure without consideration of conformations etc.
+    For every molecule there is at least one geometry.
+
+:Geometry:
+    The structure (coordinates) on which real calculations are made at the end.
+    Each geometry belongs to a molecule.
+
