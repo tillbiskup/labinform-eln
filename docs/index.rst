@@ -126,6 +126,7 @@ There is a number of related packages users of the LabInform ELN may well be int
    introduction
    concepts
    usecases
+   adapting
 
 
 .. toctree::
