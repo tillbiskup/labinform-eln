@@ -27,7 +27,7 @@ Features
 
 System:
 
-* Based on `DokuWiki <https://www.dokuwiki.org/>`_, "a simple to use and highly versatile Open Source wiki software".
+* Based on `DokuWiki <https://www.dokuwiki.org/>`_, "a simple to use and highly versatile Open Source wiki software".\ [#fn1]_
 
 * Small footprint: minimum system requirements, simple installation, no database backend
 
@@ -179,3 +179,8 @@ A note on the logo
 ==================
 
 The "L" originates from the Computer Modern Roman font originally designed by Donald E. Knuth for his TeX typesetting system. As such, it represents science and the scientific method. Harbouring the "i" representing the information bit puts things right: Proper and reproducible science is the solid support for all the information we can retrieve. The copyright of the logo belongs to J. Popp.
+
+
+.. rubric:: Footnotes
+
+.. [#fn1] "DokuWiki is a simple to use and highly versatile Open Source wiki software that doesn't require a database. It is loved by users for its clean and readable syntax. The ease of maintenance, backup and integration makes it an administrator's favorite. Built in access controls and authentication connectors make DokuWiki especially useful in the enterprise context and the large number of plugins contributed by its vibrant community allow for a broad range of use cases beyond a traditional wiki." source: https://www.dokuwiki.org/ (accessed 2023-02-22)

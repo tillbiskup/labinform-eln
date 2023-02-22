@@ -75,7 +75,7 @@ To start the Docker container, change to the ``dokuwiki`` directory and run the 
 
 This will start the Docker container, name it ``eln``, mount a few local directories and bind the HTTP port of the container to the local port ``8081``. To view your LabInform ELN, direct your browser to the address `<http://localhost:8081/>`_.
 
-If the container won't start and you get a message instead that the name is used already, this usually means that either a container with the same name exists already or that you had it rnu previously. In this case, simply delete the old container:
+If the container won't start and you get a message instead that the name is used already, this usually means that either a container with the same name exists already or that you had it run previously. In this case, simply delete the old container:
 
 .. code-block:: bash
 
@@ -86,4 +86,7 @@ If you didn't build the container already, obviously you need to do this before 
 .. code-block:: bash
 
     docker build . -t 'tillbiskup/labinform-eln'
+
+.. todo::
+    Currently, the Dockerfile builds upon images only locally available. Either extend the Dockerfile to include all the other steps, or publish the base container(s)/images on Docker Hub (and ensure they are reasonably up to date).
 

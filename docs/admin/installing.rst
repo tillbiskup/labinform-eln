@@ -10,7 +10,7 @@ This section will provide some advice with installing the DokuWiki base and the 
 Base wiki
 =========
 
-For general instructions of how to install DokuWiki, see the `official installation instructions available online <https://www.dokuwiki.org/install>`_. Generally, system requirements of the DokuWiki are quite low, only a webserver and PHP are necessary. Basic configuration of the freshly installed DokuWiki is done using a web interface. Usually, you will want to set the wiki to a "closed wiki", with every access requiring a user account.
+For general instructions of how to install DokuWiki, see the `official installation instructions available online <https://www.dokuwiki.org/install>`_. Generally, system requirements of the DokuWiki are quite low, only a webserver and PHP are necessary. Basic configuration of the freshly installed DokuWiki is done using a web interface. Usually, you will want to set the wiki as a "closed wiki", with every access requiring a user account.
 
 After having installed a bare DokuWiki, you need to add a number of plugins. This can be done from the DokuWiki admin interface via a web browser or from the command line with file system access to the server. The latter is only suggested for experienced users or if you intend to automate the installation. For details, see the respective section of the `official DokuWiki manual available online <https://www.dokuwiki.org/plugin_installation_instructions>`_.
 

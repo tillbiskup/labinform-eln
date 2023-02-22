@@ -2,7 +2,7 @@
 Overview
 ========
 
-The admin manual guides you through all the steps necessary to install and configure DokuWiki and to convert it into a fully working ELN. Note that except of installing the DokuWiki, administration can be fully performed from within the Web UI of DokuWiki. Hence, no access to the operating system layer is necessary once DokuWiki has been setup.
+The admin manual guides you through all the steps necessary to install and configure DokuWiki and to convert it into a fully working ELN. Note that except of installing the DokuWiki, administration can be fully performed from within the Web UI of DokuWiki. Hence, **no access to the operating system layer is necessary once DokuWiki has been setup**.
 
 To install the LabInform ELN from scratch, follow these steps:
 
@@ -11,7 +11,7 @@ To install the LabInform ELN from scratch, follow these steps:
   * :doc:`Setting up forms and templates <forms_templates>`
 
 
-There is, of course, some aspects of maintaining an installation of the LabInform ELN that go beyond installing the DokuWiki and creating the infrastructure within the wiki for the ELN:
+There are, of course, some aspects of maintaining an installation of the LabInform ELN that go beyond installing the DokuWiki and creating the infrastructure within the wiki for the ELN:
 
   * Backup
   * Update of the DokuWiki software
