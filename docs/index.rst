@@ -82,7 +82,7 @@ The LabInform ELN is free software. However, if you use the LabInform ELN as cru
 
 * Mirjam Schröder, Till Biskup. LabInform ELN: A lightweight and flexible electronic laboratory notebook for academic research based on the open-source software DokuWiki. To be submitted.
 
-* Mirjam Schröder, Till Biskup. Labinform ELN (2022). doi:10.5281/zenodo.#######
+* Mirjam Schröder, Till Biskup. Labinform ELN (2023). doi:10.5281/zenodo.#######
 
 To make things easier, the LabInform ELN has a `DOI <https://doi.org/10.5281/zenodo.#######>`_ provided by `Zenodo <https://zenodo.org/>`_, and you may click on the badge below to directly access the record associated with it. Note that this DOI refers to the software as such and always forwards to the most current version.
 
@@ -178,7 +178,7 @@ Please note that DokuWiki itself is provided under a GNU General Public License.
 A note on the logo
 ==================
 
-The "L" originates from the Computer Modern Roman font originally designed by Donald E. Knuth for his TeX typesetting system. As such, it represents science and the scientific method. Harbouring the "i" representing the information bit puts things right: Proper and reproducible science is the solid support for all the information we can retrieve. The copyright of the logo belongs to J. Popp.
+The "L" of the LabInform logo originates from the Computer Modern Roman font originally designed by Donald E. Knuth for his TeX typesetting system. As such, it represents science and the scientific method. Harbouring the "i" representing the information bit puts things right: Proper and reproducible science is the solid support for all the information we can retrieve. The copyright of the LabInform logo belongs to J. Popp. The added symbol on the bottom right is taken from FontAwesome.
 
 
 .. rubric:: Footnotes
