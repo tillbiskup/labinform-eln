@@ -6,16 +6,20 @@ The concepts described below are not unique to the LabInform ELN, but in their e
 
 
   * Small footprint: minimum system requirements, simple installation, no database backend
+  * Robust, resilient, sustainable, and long-term available
   * Wiki-based: simple, yet powerful markup; high flexibility
   * Entries are created by web forms and based on templates
+  * Recurring blocks of a labbook entry can be inserted using templates
   * Help texts are included right into the ELN
   * Inventory: Samples and batches
   * Usually one labbook entry per measurement
   * Measurements are grouped by method
   * Labbook entries contain crucial metadata
   * Labbook entries are cross-referenced from the sample pages and *vice versa*
-  * Recurring blocks of a labbook entry can be inserted using templates
   * Most adjustments can be made from *within* the Web UI
+
+
+Furthermore, it should be noted that many of these concepts are implemented in the `DokuWiki wiki engine <https://www.dokuwiki.org/>`_ the LabInform ELN is based upon. Being able to implement a fully working ELN using DokuWiki and a series of well-chosen plugins demonstrates nicely that the authors of DokuWiki got some fundamental design decisions right in the first place.
 
 
 Small footprint
@@ -26,10 +30,20 @@ A labbook, and for the sake of argument an ELN, is a tool you want to use daily.
 Hence, the LabInform ELN comes with minimum system requirements thanks to the underlying `DokuWiki wiki engine <https://www.dokuwiki.org/>`_ it is based upon. It is quite simple to install, requiring nothing more than a web server and PHP. Particularly and quite in contrast to most other wiki engines, DokuWiki *does not require a database backend*. You could even install DokuWiki (and hence the LabInform ELN) on a memory stick for a maximum of independence and portability. If interested, see the official `DokuWiki on a Stick <https://www.dokuwiki.org/install:dokuwiki_on_a_stick>`_ documentation.
 
 
+Robust, resilient, sustainable, and long-term available
+=======================================================
+
+A labbook contains valuable information carefully collected manually that mostly cannot be reconstructed when lost or no longer accessible. While pen and paper easily survive for decades at least, digital solutions of any kind still have to pass the test of time. Nevertheless, there are a few lessons from the (young) computer history dating back to at least the 1970s that are worth considering. Actually, much of this has become known as the "UNIX philosophy", with "Do one thing and do it well" is probably the most well-known part.
+
+One important reason for choosing `DokuWiki <https://www.dokuwiki.org/>`_ as the technical base for the LabInform ELN is that DokuWiki gets many of these things right. Therefore, it is not so much the merit of the LabInform ELN but of the design decisions of the DokuWiki backend. Some of the most important aspects: All information is stored in plain text files, no database is involved (see above). Wiki pages use a rather simple yet powerful markup (see below) that render most of the content generally machine-actionable. Backing up DokuWiki as well as the LabInform ELN is as simple as copying a folder in your file system to a safe place. And even if DokuWiki might not be further developed at some time in the (far) future, you have still full access to all your valuable information.
+
+
 Wiki-based
 ==========
 
 The LabInform ELN is wiki-based, providing all the advantages of wikis, such as a simple, yet powerful markup and a high flexibility regarding the actual content, including media and alike. What is even more: the LabInform ELN does not reinvent the wheel but is based on existing wiki software, namely `DokuWiki <https://www.dokuwiki.org/>`_, that is battle-proven and particularly suited for documentation and knowledge management. Furthermore, an existing wiki software provides a much larger user base than any ELN. The larger a user base, particularly for open-source software, the more robust and mature, and the higher the chance for long-term availability.
+
+While DokuWiki nowadays even provides users with a WYSIWYG-style editor, the traditional text-editor-like editing of pages is clearly preferable, as it forces the users to think more in structure than in formatting. A well-structured page renders the content machine-actionable to a large extent, besides helping the human user similarly in keeping and getting an overview. For even more and simpler structure, see below.
 
 
 Web forms and templates
@@ -37,11 +51,21 @@ Web forms and templates
 
 While a wiki provides the necessary flexibility to record all relevant information, a labbook and particularly an ELN should be structured to allow for a straight-forward access to the valuable information stored within. Particularly in an ELN, structured metadata allow to aggregate information, thus providing an overview and simple access. Therefore, in the LabInform ELN, entries are usually created by web forms and based on templates.
 
+Not only will new entries/pages usually be created using web forms. Often, there are elements in a labbook page that will occur over and over again. Hence, the LabInform ELN provides a series of user-created snippets that can easily be inserted in an existing wiki page at any given place. For details, see below.
+
+
+Recurring blocks of a labbook entry via templates
+=================================================
+
+Often, certain recurring elements need to be added to a labbook page, be it a step in a synthesis or another metadata file containing all metadata recorded *during* data acquisition. This is possible from within the DokuWiki editor using a template manager. The templates as such can be fully controlled by the individual users and previewed within the template manager.
+
 
 Help included
 =============
 
-Systems that are used regularly should have a user interface that is as intuitive as possible. Nevertheless, while we can try to minimise accidental complexity as much as possible, every non-trivial process comes with inherent complexity we have to cope with. In terms of an ELN, those originally designing and regularly using it don't need any manual. However, usually you will have some people new to the lab or only temporarily present that are going to use the ELN, and others may only use it infrequently. While in-person training to get people started is highly valuable, being the single point of contact for all questions regarding a praticular tool doesn't scale well. This is why in the LabInform ELN, help texts are included right into the ELN, in a way they don't disturb the frequent user but help those unfamiliar or only occasionally using the system. Here, both brief and to the point explanations of how to perform the task at hand as well as (lab-specific) conventions shall be provided.
+Systems that are used regularly should have a user interface that is as intuitive as possible. Nevertheless, while we can try to minimise accidental complexity as much as possible, every non-trivial process comes with inherent complexity we have to cope with. In terms of an ELN, those originally designing and regularly using it don't need any manual. However, usually you will have some people new to the lab or only temporarily present that are going to use the ELN, and others may only use it infrequently.
+
+While in-person training is highly valuable to get people started, being the single point of contact for all questions regarding a particular tool doesn't scale well. This is why in the LabInform ELN, help texts are included right into the ELN, in a way they don't disturb the frequent user but help those unfamiliar or only occasionally using the system. Here, both brief and to the point explanations of how to perform the task at hand as well as (lab-specific) conventions shall be provided.
 
 
 Inventory for samples
@@ -71,17 +95,11 @@ As mentioned above, the LabInform ELN is organised around measurements on sample
 Metadata and (automatic) cross-referencing
 ==========================================
 
-Lab notebooks are an established tool for scientific recordkeeping, and acquiring relevant information in form of (structured) metadata is a crucial aspect of documenting the research process. Therefore, each labbook entry contains crucial metadata. At least some of this relevant information is grouped in a block of structured metadata in form of key--value pairs, residing at the top of the individual page. This allows for aggregating this information in overview tables that are sortable and can be filtered.
+Lab notebooks are an established tool for scientific record-keeping, and acquiring relevant information in form of (structured) metadata is a crucial aspect of documenting the research process. Therefore, each labbook entry contains crucial metadata. At least some of this relevant information is grouped in a block of structured metadata in form of key--value pairs, residing at the top of the individual page. This allows for aggregating this information in overview tables that are sortable and can be filtered.
 
 Furthermore, labbook entries for individual measurements are cross-referenced from the sample pages and *vice versa*. Thus, the LabInform ELN provides different ways to access the relevant information. You can either start with a particular sample and see on its page in the inventory what measurements have been performed, as this information is automatically available in an overview table cross-linked to the individual labbook entries. Similarly, you can start with a method, have a look at the measurements that have been performed, look at an individual measurement and from there continue to the sample.
 
 The cross-references just mentioned are added automatically, thanks to using web forms for creating entries for samples and measurements. Additionally, the LabInform ELN simplifies manual cross-references by providing special markup for linking to samples, batches, and alike, once again making use of functionality provided by the underlying `DokuWiki wiki engine <https://www.dokuwiki.org/>`_.
-
-
-Recurring blocks of a labbook entry via templates
-=================================================
-
-Often, certain recurring elements need to be added to a labbook page, be it a step in a synthesis or another metadata file containing all metadata recorded *during* data acquisition. This is possible from within the DokuWiki editor using a template manager. The templates as such can be fully controlled by the individual users and previewed within the template manager.
 
 
 Adjustments from within the Web UI
