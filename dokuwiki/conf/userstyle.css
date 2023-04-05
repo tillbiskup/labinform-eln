@@ -1,0 +1,10 @@
+div.labbook dl {
+  /* code for the container block, such as position, layout and borders, goes here */
+  width: 66%;
+  margin: 1em 0em;
+  padding: 1ex;
+}
+
+div.editbutton_plugin_data form button {
+  margin-bottom: 1em;
+}
