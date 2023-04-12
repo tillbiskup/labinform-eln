@@ -1,15 +1,18 @@
 # Developer documentation: docker
 
-The `Dockerfile` is used to create a docker image for test purposes. This file requires a series of docker containers to be available, namely `tillbiskup/nginx`, `tillbiskup/nginx-php`, `tillbiskup/dokuwiki`, and
-`tillbiskup/dokuwiki-eln`.
+The `Dockerfile` is used to create a docker image for test purposes. This file requires a series of docker containers to be available, namely `tillbiskup/nginx`, `tillbiskup/nginx-php`, `tillbiskup/dokuwiki`, and `tillbiskup/dokuwiki-eln`.
 
-## Build image
+## Using docker
+
+There are two ways of working with the Dockerfile: using plain docker, and using docker compose. Here, the first option is described. For how to use docker compose, see below.
+
+### Build image
 
 To build the image:
 
     docker build . -t 'tillbiskup/labinform-eln'
 
-## Run the container
+### Run the container
 
 To run the container:
 
@@ -23,8 +26,40 @@ To see the running LabInform ELN instance, navigate with your browser to [localh
 
 Currently, the credentials are demo-admin:eln-admin and demo-user:eln-user
 
-## Stop and remove the container
+### Stop and remove the container
 
 To stop and remove the container:
 
     docker stop eln; docker rm eln
+
+
+## Using docker compose
+
+There are two ways of working with the Dockerfile: using plain docker, and using docker compose. Here, the second option is described. For how to use plain docker, see above.
+
+### Run the container
+
+Usually, running the container is as simple as:
+
+    docker compose up -d
+
+Here, ``-d`` implies running as demon.
+
+Note that there is no need to build the image beforehand, as that is been taken care of automatically by docker compose. However, if you need to rebuild the image, see below.
+
+### (Re)build the image
+
+As mentioned above, initially building the image before running the container is not necessary, as docker compose takes care of that for you. However, to rebuild the container (particularly important for testing), run this commmand:
+
+    docker compose build
+
+### Stop (and remove) the container
+
+To just stop the container, run this command:
+
+    docker compose down
+
+To remove the container as well, run the following command:
+
+    docker compose rm
+
