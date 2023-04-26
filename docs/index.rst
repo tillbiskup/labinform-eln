@@ -78,7 +78,7 @@ How to cite
 
 The LabInform ELN is free software. However, if you use the LabInform ELN as crucial infrastructure component of your own research, please cite both, the article describing it and the software itself:
 
-* Mirjam Schröder, Till Biskup. LabInform ELN: A lightweight and flexible electronic laboratory notebook for academic research based on the open-source software DokuWiki. To be submitted.
+* Mirjam Schröder, Till Biskup. LabInform ELN: A lightweight and flexible electronic laboratory notebook for academic research based on the open-source software DokuWiki. *ChemRxiv*, 2023. doi:`10.26434/chemrxiv-2023-2tvct <https://doi.org/10.26434/chemrxiv-2023-2tvct>`_
 
 * Mirjam Schröder, Till Biskup. Labinform ELN (2023). doi:10.5281/zenodo.#######
 

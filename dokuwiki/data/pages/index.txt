@@ -45,8 +45,8 @@
 
 
 <WRAP center round tip 100%>
-This page is a **technical demonstration of** the capabilities of **the LabInform ELN** based on [[https://www.dokuwiki.org/|DokuWiki]]. While fully functional, different areas of the ELN purposefully use different solutions to similar problems to demonstrate the approaches available. For an extensive documentation, head over to the [[https://eln.docs.labinform.de/|online documentation]] (best in a separate browser tab). The larger context will be described in the following publication:
+This page is a **technical demonstration of** the capabilities of **the LabInform ELN** based on [[https://www.dokuwiki.org/|DokuWiki]]. While fully functional, different areas of the ELN purposefully use different solutions to similar problems to demonstrate the approaches available. For an extensive documentation, head over to the [[https://eln.docs.labinform.de/|online documentation]] (best in a separate browser tab). The larger context is described in the following publication:
 
-  * Mirjam Schröder and Till Biskup\\ LabInform ELN: A lightweight and flexible electronic laboratory notebook for academic research based on the open-source software DokuWiki.\\ //to be submitted//
+  * Mirjam Schröder and Till Biskup\\ LabInform ELN: A lightweight and flexible electronic laboratory notebook for academic research based on the open-source software DokuWiki.\\ //ChemRxiv//, 2023 [[https://doi.org/10.26434/chemrxiv-2023-2tvct|doi:10.26434/chemrxiv-2023-2tvct]]
 
 </WRAP>
