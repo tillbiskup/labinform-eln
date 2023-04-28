@@ -19,11 +19,15 @@
 # containing the version string will be checked for manual changes
 # and if there are any, the script will exit immediately.
 #
-# Copyright (c) 2017-18, Till Biskup
-# 2018-11-05
+# Additionally, copy version information to file that gets included
+# into the wiki sidebar.
+#
+# Copyright (c) 2017-23, Till Biskup
+# 2023-04-28
 
 # Some configuration
 VERSIONFILE="VERSION"
+WIKIVERSIONFILE="dokuwiki/data/pages/version.txt"
 CHECKGIT=true # set to "true" to check for changes via git diff
 
 # Internal functions
@@ -63,10 +67,14 @@ versionArray[${#versionArray[@]}-1]=${lastPart}
 newVersionString=`join_by . ${versionArray[@]}`
 
 # Write new version string to file
-echo ${newVersionString} > ${VERSIONFILE}
+echo "${newVersionString}" > ${VERSIONFILE}
+
+# Write new version string to wiki file
+echo '\\ Version:' `cat ${VERSIONFILE}` > ${WIKIVERSIONFILE}
 
 if [[ ${CHECKGIT} == true ]]
 then
     git add ${VERSIONFILE}
+    git add ${WIKIVERSIONFILE}
     echo "Version in version file upped"
 fi
