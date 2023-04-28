@@ -1,0 +1,50 @@
+cff-version: 1.2.0
+message: If you use this software, please cite both the preprint from preferred-citation and the software itself.
+preferred-citation:
+  authors:
+    - family-names: Schröder
+      given-names: Mirjam
+      orcid: "https://orcid.org/0000-0002-8940-3185"
+    - family-names: Biskup
+      given-names: Till
+      orcid: "https://orcid.org/0000-0003-2913-0004"
+  title: "LabInform ELN: A lightweight and flexible electronic laboratory notebook for academic research based on the open-source software DokuWiki."
+  doi: 10.26434/chemrxiv-2023-2tvct
+  journal: ChemRxiv
+  year: 2023
+  type: article
+title: LabInform ELN
+abstract: >
+    LabInform ELN is a lightweight and flexible electronic laboratory notebook for academic research based on the open-source software DokuWiki. Key features are its minimal system requirements, flexibility, modularity, and compliance with auditing requirements. The minimalistic system requirements allow for using it in small groups and even by individual scientists and help with improving both, reproducibility and access to the notes taken. At the same time, thanks to its fine-grained access management, it scales well to larger groups. Furthermore, it can be easily adjusted to specific needs from within its web interface.
+authors:
+  - family-names: Schröder
+    given-names: Mirjam
+    orcid: "https://orcid.org/0000-0002-8940-3185"
+  - family-names: Biskup
+    given-names: Till
+    orcid: "https://orcid.org/0000-0003-2913-0004"
+type: software
+license: BSD-2-Clause
+repository-code: "https://github.com/tillbiskup/labinform-eln"
+keywords:
+  - "electronic laboratory notebook"
+  - "ELN"
+  - "reproducible research"
+  - "research data management"
+  - "metadata"
+  - "wiki"
+  - "inventory"
+  - "FAIR data"
+  - "knowledge management"
+references:
+  - authors:
+    - family-names: Schröder
+      given-names: Mirjam
+      orcid: "https://orcid.org/0000-0002-8940-3185"
+    - family-names: Biskup
+      given-names: Till
+      orcid: "https://orcid.org/0000-0003-2913-0004"
+    doi: 10.5281/zenodo.4717937
+    repository-code: "https://github.com/tillbiskup/labinform-eln"
+    title: LabInform ELN
+    type: software
