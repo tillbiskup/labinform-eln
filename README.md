@@ -17,6 +17,8 @@ For more information on how to use the LabInform ELN from a user perspective, ha
 ## Features
 
 *A number of good reasons why to choose the LabInform ELN instead of other ELN candidates.*
+
+
 System:
 
 * Based on [DokuWiki](https://www.dokuwiki.org/), "a simple to use and highly versatile Open Source wiki software".
