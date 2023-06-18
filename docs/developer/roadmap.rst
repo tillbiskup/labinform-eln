@@ -10,8 +10,7 @@ For pre-release on Zenodo
 
 * Sensible documentation without too large gaps
 * Demo instance somewhat working (with automatic delete)
-
-  * Requires either single Dockerfile or underlying images to be on publicly accessible registry
+* Appropriate README with at least some information besides the license (link to demo instance and documentation)
 
 
 For version 0.1.0
