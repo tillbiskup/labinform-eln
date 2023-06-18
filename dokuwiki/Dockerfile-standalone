@@ -1,0 +1,117 @@
+# Temporary container for obtaining dokuwiki sources
+FROM alpine:latest as temp
+
+RUN apk --no-cache --update add \
+    curl \
+    unzip
+
+# Get dokuwiki source
+RUN mkdir -p /srv/www \
+    && cd /srv/www/ \
+    && curl -sfSL https://github.com/splitbrain/dokuwiki/tarball/stable | \
+    tar --strip-components=1 -xzf - \
+# Remove all language files except de/en
+    && find ./ -name 'lang' | while read r; do \
+        (cd $r; find ./* -type d | grep -v 'de' | grep -v 'en$' | while read r; do rm -r $r; done); \
+        done
+
+# Change permissions
+RUN cd /srv/www/ \
+    && rm conf/*.dist \
+    && chown -R nobody.nobody . \
+    && chmod -R a-w,o-rwx . \
+    && chmod -R u+w /srv/www/data \
+    && chmod 700 /srv/www/conf/
+
+
+FROM alpine:latest
+
+LABEL Maintainer="Till Biskup <docker@till-biskup.de>"
+LABEL Description="Alpine-based container running DokuWiki-based LabInform ELN using nginx as non-privileged user."
+
+ENV UID=1000
+
+# Install packages
+RUN apk --no-cache --update add \
+  nginx \
+  php81 \
+  php81-fpm \
+  php81-gd \
+  php81-json \
+  php81-openssl \
+  php81-session \
+  php81-xml \
+  php81-pdo_sqlite \
+  shadow
+
+# Configure nginx
+COPY nginx/nginx.conf /etc/nginx/nginx.conf
+
+# Configure PHP-FPM
+COPY nginx/fpm-pool.conf /etc/php81/php-fpm.d/www.conf
+COPY nginx/php.ini /etc/php81/conf.d/custom.ini
+
+# Setup document root
+RUN mkdir -p /srv/www
+
+# Copy dokuwiki source from temporary container
+COPY --chown=nobody --from=temp /srv/www /srv/www
+
+# Copy local config
+COPY --chown=root nginx/nginx.conf /etc/nginx/
+
+RUN cd /srv/www \
+    && ./bin/plugin.php extension install blockquote \
+    && ./bin/plugin.php extension install bureaucracy \
+    && ./bin/plugin.php extension install caption \
+    && ./bin/plugin.php extension install confmanager \
+    && ./bin/plugin.php extension install data \
+    && ./bin/plugin.php extension install definitionlist \
+    && ./bin/plugin.php extension install folded \
+    && ./bin/plugin.php extension install icons \
+    && ./bin/plugin.php extension install include \
+    && ./bin/plugin.php extension install indexmenu \
+    && ./bin/plugin.php extension install legalnotice \
+    && ./bin/plugin.php extension install note \
+    && ./bin/plugin.php extension install snippets \
+    && ./bin/plugin.php extension install sqlite \
+    && ./bin/plugin.php extension install templatepagename \
+    && ./bin/plugin.php extension install tplinc \
+    && ./bin/plugin.php extension install wrap \
+# Remove all language files except de/en
+    && find ./ -name 'lang' | while read r; do \
+        (cd $r; find ./* -type d | grep -v 'de' | grep -v 'en$' | while read r; do rm -r $r; done); \
+        done
+
+# Copy tplinc templates to config
+RUN cp /srv/www/lib/plugins/tplinc/dokuwiki/* /srv/www/conf/
+
+# Copy local data
+COPY data/media/* /srv/www/data/media/
+COPY data/meta/* /srv/www/data/meta/
+COPY conf/* /srv/www/conf/
+RUN mkdir -p /srv/www/conf/lang/en/
+COPY conf/lang/en/* /srv/www/conf/lang/en/
+
+RUN usermod -u ${UID} nobody && echo ${UID}
+
+# Make sure files/folders needed by the processes are accessable when they run under the nobody user
+RUN chown -R nobody.nobody /srv/www && \
+  chown -R nobody.nobody /run && \
+  chown -R nobody.nobody /var/lib/nginx && \
+  chown -R nobody.nobody /var/log/nginx
+
+# Make config read-only (demo container, to not allow changing settings)
+RUN chmod ugo-w /srv/www/conf/
+
+# Switch to use a non-root user from here on
+USER nobody
+
+# Add application
+WORKDIR /srv/www
+
+# Expose the port nginx is reachable on
+EXPOSE 8080
+
+# Start nginx & php-fpm
+ENTRYPOINT /usr/sbin/php-fpm81 -F & nginx -g "daemon off;"

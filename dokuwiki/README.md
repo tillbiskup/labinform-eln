@@ -2,6 +2,11 @@
 
 The `Dockerfile` is used to create a docker image for test purposes. This file requires a series of docker containers to be available, namely `tillbiskup/nginx`, `tillbiskup/nginx-php`, `tillbiskup/dokuwiki`, and `tillbiskup/dokuwiki-eln`.
 
+Note that there is now an additional docker file called `Dockerfile-standalone` that does not depend on the series of other containers and that can used for local deployment and testing purposes. To explicitly use this docker file, add `-f Dockerfile-standalone` to the `docker build` command below and/or change your `docker-compose.yml` file accordingly.
+
+However, please note that none of these docker containers are yet in a state that they should be used for deploying production-ready containers. At least, in a production environment, you would like to have a backup strategy in place.
+
+
 ## Using docker
 
 There are two ways of working with the Dockerfile: using plain docker, and using docker compose. Here, the first option is described. For how to use docker compose, see below.
@@ -22,7 +27,7 @@ This will add the name `eln` to the running container and bind-mount the local d
 
 **Important:** The above command needs to be issued from within the `dokuwiki` directory or otherwise the paths for the volumes need to be adapted. Otherwise, your wiki will not work properly (not finding any content and complaining right away).
 
-To see the running LabInform ELN instance, navigate with your browser to [localhost:8081/](localhost:8081/)
+To see the running LabInform ELN instance, navigate with your browser to [localhost:8081/](http://localhost:8081/)
 
 Currently, the credentials are demo-admin:eln-admin and demo-user:eln-user
 
