@@ -63,7 +63,16 @@ To view the just built documentation, point your browser to the correct director
 Docker container
 ================
 
-To ease development of the LabInform ELN, a Docker container is provided that can be run locally. The same docker container will eventually run the demo instance available online at `<https://eln.labinform.de/>`_.
+To ease development of the LabInform ELN, a Docker container is provided that can be run locally. The same (or at least a very similar) Docker container will eventually run the demo instance available online at `<https://eln.labinform.de/>`_.
+
+.. warning::
+    Please note that none of these docker containers are yet in a state that they should be used for deploying production-ready containers. At least, in a production environment, you would like to have a backup strategy in place.
+
+There are two ways of working with the Dockerfile: using plain docker, and using docker compose. Here, the first option is described. For how to use docker compose, see below.
+
+
+Use plain docker
+----------------
 
 To start the Docker container, change to the ``dokuwiki`` directory and run the following command, assuming you have a working Docker installation and had built the container previously:
 
@@ -74,6 +83,15 @@ To start the Docker container, change to the ``dokuwiki`` directory and run the 
         -v "`pwd`/data/media:/srv/www/data/media" tillbiskup/labinform-eln
 
 This will start the Docker container, name it ``eln``, mount a few local directories and bind the HTTP port of the container to the local port ``8081``. To view your LabInform ELN, direct your browser to the address `<http://localhost:8081/>`_.
+
+.. note::
+    **Important:** The above command needs to be issued from within the ``dokuwiki`` directory or otherwise the paths for the volumes need to be adapted. Otherwise, your wiki will not work properly (not finding any content and complaining right away).
+
+To stop and remove the container:
+
+.. code-block:: bash
+
+    docker stop eln; docker rm eln
 
 If the container won't start and you get a message instead that the name is used already, this usually means that either a container with the same name exists already or that you had it run previously. In this case, simply delete the old container:
 
@@ -88,5 +106,47 @@ If you didn't build the container already, obviously you need to do this before 
     docker build . -t 'tillbiskup/labinform-eln'
 
 .. todo::
-    Currently, the Dockerfile builds upon images only locally available. Either extend the Dockerfile to include all the other steps, or publish the base container(s)/images on Docker Hub (and ensure they are reasonably up to date).
+    Currently, the Dockerfile ``Dockerfile`` builds upon images only locally available. However, there is now another Dockerfile called ``Dockerfile-standalone`` that does only depend on the (latest) alpine image and incorporates all other steps necessary to create a fully functional Docker container for the LabInform ELN.
+
+Use docker compose
+------------------
+
+There are two ways of working with the Dockerfile: using plain docker, and using docker compose. Here, the second option is described. For how to use plain docker, see above.
+
+Run the container
+.................
+
+Usually, running the container is as simple as:
+
+.. code-block:: bash
+
+    docker compose up -d
+
+Here, ``-d`` implies running as demon.
+
+Note that there is no need to build the image beforehand, as that is been taken care of automatically by docker compose. However, if you need to rebuild the image, see below.
+
+(Re)build the image
+...................
+
+As mentioned above, initially building the image before running the container is not necessary, as docker compose takes care of that for you. However, to rebuild the container (particularly important for testing), run this commmand:
+
+.. code-block:: bash
+
+    docker compose build
+
+Stop (and remove) the container
+...............................
+
+To just stop the container, run this command:
+
+.. code-block:: bash
+
+    docker compose down
+
+To remove the container as well, run the following command:
+
+.. code-block:: bash
+
+    docker compose rm
 
