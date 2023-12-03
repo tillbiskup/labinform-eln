@@ -25,14 +25,16 @@ For a complete list of plugins that should be installed and a short description 
     Bureaucracy                 Web forms used to create pages, *e.g.*, for the lab notebook
 
                                 and the inventory (samples, batches)
-    Structured Data             Collecting and storing structured data (metadata) on individual wiki pages;
+    Structured Data / data      Collecting and storing structured data (metadata) on individual wiki pages;
 
                                 allows to aggregate information in overview tables and lists with filters
+                                
+                                (by Andreas Gohr)
     sqlite                      Interface to an SQLite database used solely for easier access to the data
 
                                 collected using the Structured Data plugin and contained in individual
 
-                                wiki pages
+                                wiki pages (by Andreas Gohr)
     templatepagename            Access to template files from within the wiki interface using special
 
                                 (and configurable) names
@@ -44,7 +46,9 @@ For a complete list of plugins that should be installed and a short description 
     Icons                       Include fontawesome and other icons into wiki pages,
 
                                 helpful for easier navigation and overview
-    configuration file manager  Access to the configuration files from within the DokuWiki admin area
+    confmanager                 Access to the configuration files from within the DokuWiki admin area 
+    
+                                (by cosmo code)
     folded                      Create folded parts of a page, *e.g.*, for help texts
     include                     Include other pages into a wiki page; used for help texts
 
@@ -53,7 +57,7 @@ For a complete list of plugins that should be installed and a short description 
     tplinc                      Conditionally include pages at certain parts of the DokuWiki template;
 
                                 useful, *e.g.*, for area-specific additional navigation in the sidebar
-    upgrade                     Upgrade the DokuWiki from within the admin interface
+    upgrade                     Upgrade the DokuWiki from within the admin interface (installed by default)
     snippets                    Insert templates into the current page at the cursor position
 
                                 helpful for more consistent documentation, reusing well-crafted
