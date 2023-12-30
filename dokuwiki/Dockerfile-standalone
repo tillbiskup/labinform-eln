@@ -34,22 +34,22 @@ ENV UID=1000
 # Install packages
 RUN apk --no-cache --update add \
   nginx \
-  php81 \
-  php81-fpm \
-  php81-gd \
-  php81-json \
-  php81-openssl \
-  php81-session \
-  php81-xml \
-  php81-pdo_sqlite \
+  php82 \
+  php82-fpm \
+  php82-gd \
+  php82-json \
+  php82-openssl \
+  php82-session \
+  php82-xml \
+  php82-pdo_sqlite \
   shadow
 
 # Configure nginx
 COPY nginx/nginx.conf /etc/nginx/nginx.conf
 
 # Configure PHP-FPM
-COPY nginx/fpm-pool.conf /etc/php81/php-fpm.d/www.conf
-COPY nginx/php.ini /etc/php81/conf.d/custom.ini
+COPY nginx/fpm-pool.conf /etc/php82/php-fpm.d/www.conf
+COPY nginx/php.ini /etc/php82/conf.d/custom.ini
 
 # Setup document root
 RUN mkdir -p /srv/www
@@ -114,4 +114,4 @@ WORKDIR /srv/www
 EXPOSE 8080
 
 # Start nginx & php-fpm
-ENTRYPOINT /usr/sbin/php-fpm81 -F & nginx -g "daemon off;"
+ENTRYPOINT /usr/sbin/php-fpm82 -F & nginx -g "daemon off;"
