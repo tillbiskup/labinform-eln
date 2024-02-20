@@ -47,3 +47,17 @@ htmlcov/
 [0-9]_[0-9][0-9][0-9][0-9].txt
 [0-9][0-9]_[0-9][0-9][0-9][0-9].txt
 dokuwiki/data/media/labbook/*
+
+data-bkp
+#_dummy 
+dokuwiki/data/cache/*
+dokuwiki/data/attic/*
+dokuwiki/data/meta/*
+!dokuwiki/data/meta/data.sqlite3
+!dokuwiki/data/meta/sqlite.sqlite3
+dokuwiki/data/media_attic/*
+dokuwiki/data/media_meta/*
+dokuwiki/data/tmp/*
+dokuwiki/data/log/*
+dokuwiki/data/locks/*
+dokuwiki/data/index/*
