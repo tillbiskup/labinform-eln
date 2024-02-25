@@ -148,3 +148,26 @@ The tplinc plugin needs some special attention, as by default, the standard temp
 Once done, in the special admin section for the tplinc plugin, you can include wiki pages at specific places of the template. Within the ELN, this is used as area-specific additional navigation in the sidebar.
 
 
+Nice-to-have plugins
+====================
+
+There are more plugins, that are nice to have as they offer additional functionality. Those can be found in table  :numref:`tab-extra-plugins`. 
+
+.. table:: Additional plugins for the DokuWiki-ELN which are handy and offer additional functionality. Each plugin can be found by the given name and installed via the plugin manager available from the DokuWiki admin interface.
+    :name: tab-extra-plugins
+
+    ============= =================================================================================
+    Name          Description
+    ============= =================================================================================
+    searchindex   The searchindex can be completely rebuilt which is helpful after moving namespaces
+    
+    		  or adding pages via the file system. It is therefore most helpful during development.
+    todo          Creating To-do lists with checkmarks and saving who checked the mark when. 
+    dw2pdf        Allows to download single pages or entire namespaces via URL extension. The pages
+    
+    		  created contain links the same as the original website. This format is therefore 
+    		  
+    		  useful to exchange the contents of the labbook.        
+    pdfjs	  Embed pdf pages on wiki pages. 
+    ============= =================================================================================
+
